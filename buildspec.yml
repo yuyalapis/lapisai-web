@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+    build:
+        commands:
+            - echo Build React...
+            - docker-compose run --rm app sh -c 'npm install'
+            - docker-compose run --rm app npm run build
+            - echo Finish Build!!
+
+    post_build:
+        commands:
+            - echo Copy S3...
+            - aws s3 sync app/build s3://denwaban-web
+            - echo Delete CloudFront cache...
+            - aws cloudfront create-invalidation --distribution-id E1CNIGHDCROG26 --paths "/index.html"
+            - echo Success!
+cache:
+    paths:
+        - app/node_modules/**/*
