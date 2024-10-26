@@ -3,7 +3,7 @@ name: Lambda Deploy
 on:
   push:
     branches: 
-      - 'main' # mainブランチにpushやmergeされた時をトリガーとしています
+      - 'main' # mainブランチにpushやmergeされた時をトリガー
 
 jobs:
   deploy:
