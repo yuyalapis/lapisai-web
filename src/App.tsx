@@ -91,7 +91,7 @@ function App() {
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Log in
+                    2025年夏、再リリース予定!!
                   </a>
                 </div>
               </div>
@@ -116,30 +116,29 @@ function App() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              わけわからん電話からの解放 {' '}
+              パワーアップして帰ってくる {' '}
               <a href="#" className="font-semibold text-indigo-600">
                 <span aria-hidden="true" className="absolute inset-0" />
-                Androidアプリ <span aria-hidden="true">&rarr;</span>
+                iOSアプリ <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              アンドロイドアプリ<br />俺は電話番じゃ<br />ねーんだよ
+              iOSアプリ<br />もふもふ天国<br />
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-              簡単な受付としての応答メッセージを設定でき、<br />テキストでどのような要件での電話だったのか知ることができます。<br />
-              番号によって、応答メッセージを流さず、<br />そのまま電話に出ることもできます
+              不思議なバーチャルペットアプリ、<br />差分もりもり<br />
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                新規会員登録
+                現在アップデート中!!
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                ログイン <span aria-hidden="true">→</span>
+                再リリースまで今しばらくおまちください <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
