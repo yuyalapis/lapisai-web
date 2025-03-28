@@ -128,7 +128,7 @@ function App() {
               もふもふ天国<br />
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-              不思議なバーチャルペットiOSアプリ、<br />2025年夏、再リリース予定!!<br />差分もりもり<br /> <br />[今日の開発日記] 2025-3-29: プロジェクト再始動
+              不思議なバーチャルペットiOSアプリ、<br />2025年夏、再リリース予定!!<br />差分もりもり<br /> <br />[今日の開発日記] 2025-3-29: プロジェクト再始動 - さぶや
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
