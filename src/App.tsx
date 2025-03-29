@@ -91,7 +91,7 @@ function App() {
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    2025年夏、再リリース予定!!
+                    2025年春、発売予定
                   </a>
                 </div>
               </div>
@@ -116,19 +116,29 @@ function App() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              パワーアップして帰ってくる {' '}
+              Treecraft {' '}
               <a href="#" className="font-semibold text-indigo-600">
                 <span aria-hidden="true" className="absolute inset-0" />
-                iOSアプリ <span aria-hidden="true">&rarr;</span>
+                木の栞 <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              もふもふ天国<br />
+              Treecraft<br />
+              Produced by Lapis AI<br />
+              By 株式会社Rozen
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-              不思議なバーチャルペットiOSアプリ、<br />2025年夏、再リリース予定!!<br />差分もりもり<br /> <br />[今日の開発日記] 2025-3-29: プロジェクト再始動 - さぶや
+              いい栞が、ない、<br />
+              本当にない<br />
+              <br />
+              ジュンク堂本店のレジ前の栞とか良かったりするんですが、プラスチックなんですよね<br />
+              <br />
+              ということで、ヤマザクラなど厳選した木の栞を作っております<br />
+              <br />
+              [今日の開発日記] <br />
+              2025-3-29: プロジェクト始動 - さぶや
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -138,7 +148,7 @@ function App() {
                 現在アップデート中!!
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                再リリースまで今しばらくおまちください <span aria-hidden="true">→</span>
+                発売開始まで今しばらくおまちください <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
