@@ -141,7 +141,7 @@ function App() {
               <br />
               [今日の開発日記] <br />
               2025-03-29: プロジェクト始動 - さぶや<br />
-              2025-03-30: サイトを動くようにしました - さぶや
+              2025-03-30: サイトをとりあえず動くようにしました - さぶや
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
