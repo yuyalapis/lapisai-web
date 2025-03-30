@@ -127,7 +127,7 @@ function App() {
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
               Treecraft<br />
               Produced by Lapis AI<br />
-              By 株式会社Rozen
+              
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
               いい栞が、ない、<br />
@@ -157,7 +157,7 @@ function App() {
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                発売開始まで今しばらくおまちください <span aria-hidden="true">→</span>
+                株式会社Rozen <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
