@@ -147,7 +147,7 @@ function App() {
                 Amazon にて販売予定
               </a>
             </div>
-            <div className="text-center">
+            <div className="text-left">
               <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
               
                 [今日の開発日記] <br />
