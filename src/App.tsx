@@ -146,14 +146,16 @@ function App() {
               >
                 Amazon にて販売予定
               </a>
-              
+            </div>
+            <div className="text-center">
               <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
               
                 [今日の開発日記] <br />
                 2025-03-29: プロジェクト始動 - さぶや<br /><br />
                 2025-03-30: サイトをとりあえず動くようにしました。<br />このように頻繁にトップがiPadなどから更新できるサイトというのも珍しいのですが、構築まわりで何かございましたら yuyasatowork@gmail.com までご連絡ください(とりあえずgmailです)。<br />アホな金額とか請求しませんので。ちなみにReactで動いております。- さぶや
               </p>
-
+            </div>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                 発売開始まで今しばらくおまちください <span aria-hidden="true">→</span>
               </a>
