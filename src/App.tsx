@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo512.png';
+import logo from './logo.svg';
 import './App.css';
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
