@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo512.png';
 import './App.css';
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
@@ -125,7 +125,7 @@ function App() {
           </div>
           <div className="text-center">
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              木のコンピューター Treecraft<br />
+              木のコンピューター Lapis<br />
               Produced by Lapis AI<br />
               By 株式会社Rozen
             </h1>
