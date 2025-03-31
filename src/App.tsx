@@ -119,13 +119,13 @@ function App() {
               Treecraft {' '}
               <a href="#" className="font-semibold text-indigo-600">
                 <span aria-hidden="true" className="absolute inset-0" />
-                木の栞 <span aria-hidden="true">&rarr;</span>
+                木のコンピューター <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Treecraft<br />
+              木のコンピューター Treecraft<br />
               Produced by Lapis AI<br />
               By 株式会社Rozen
             </h1>
@@ -138,6 +138,17 @@ function App() {
               <br />
               ということで、<br />
               厳選した木の栞を作っております<br />
+              <br />
+              のですが、見つけちゃいました<br />
+              スタンダードなんとかに木の栞5枚セット300円で売っておりました<br />
+              ウォールナットツリーの切られた木肌がきらきら輝いておりました<br />
+              <br />
+              その時思ったのです<br />
+              これが見えるトランシーバーだったら<br />
+              通信できたら夢のようだと<br />
+              木のコンピューター Treecraft<br />
+              無線通信の技術を回路設計・コンデンサー選びから行い<br />
+              プロトタイプ Lapis I が完成しました
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -154,6 +165,7 @@ function App() {
                 2025-03-29: プロジェクト始動 - さぶや<br /><br />
                 2025-03-30: サイトをとりあえず動くようにしました。<br />このように頻繁にトップが更新できるサイトというのも珍しいのですが、構築まわりで何かございましたら yuya@lapisai.com までご連絡ください。<br />アホな金額とか請求しませんので。ちなみにReactで動いております。- さぶや<br />
                 <br />2025-03-31: 独自ドメインメールを設定しました - さぶや
+                <br />2025-03-31: 作っているものを木の栞から木のコンピューターにアップデートしました - さぶや
               </p>
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
