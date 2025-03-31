@@ -22,11 +22,7 @@ function App() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              <img alt="" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -169,10 +165,7 @@ function App() {
               </p>
             </div>
             <div class="w-full place-items-center">
-              <img class="object-cover object-center w-full rounded-lg shadow-xl h-96 shadow-blue-gray-900/50"
-                src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
-                alt="nature image"
-              />
+              <img class="object-cover object-center w-full rounded-lg" src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80" alt="nature image" />
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
