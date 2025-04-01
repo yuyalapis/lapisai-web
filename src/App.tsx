@@ -16,7 +16,7 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
+    <div className="bg-indigo-100">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
@@ -103,7 +103,7 @@ function App() {
           </div>
           
           <div className="text-center">
-            <h1 className="text-balance text-xl pt-1 font-semibold tracking-tight text-gray-900 sm:text-7xl">
+            <h1 className="text-balance text-xl pt-2 font-semibold tracking-tight text-gray-900 sm:text-7xl">
               木のコンピューター Lapis<br />
               Produced by Lapis AI<br />
               By 株式会社Rozen
