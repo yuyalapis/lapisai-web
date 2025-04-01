@@ -103,7 +103,7 @@ function App() {
           </div>
           
           <div className="text-center">
-            <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+            <h1 className="text-balance text-xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
               木のコンピューター Lapis<br />
               Produced by Lapis AI<br />
               By 株式会社Rozen
