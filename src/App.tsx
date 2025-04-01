@@ -96,14 +96,14 @@ function App() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-4 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="w-full place-items-center">
             <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover.jpg" alt="Lapis I prototype image" />
           </div>
           
           <div className="text-center">
-            <h1 className="text-balance text-xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+            <h1 className="text-balance text-xl pt-1.5 font-semibold tracking-tight text-gray-900 sm:text-7xl">
               木のコンピューター Lapis<br />
               Produced by Lapis AI<br />
               By 株式会社Rozen
