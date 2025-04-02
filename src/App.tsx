@@ -153,6 +153,10 @@ function App() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                 株式会社Rozen <span aria-hidden="true">→</span>
+                <br />
+                東京都豊島区西池袋3丁目29番3号梅本ビル4D coba池袋内
+                <br />
+                yuya@lapisai.com
               </a>
             </div>
           </div>
