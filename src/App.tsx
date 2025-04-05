@@ -22,7 +22,8 @@ function App() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img alt="" src="https://logo.svgcdn.com/l/terminal.png" className="h-8 w-auto" />
+              <img alt="" src="/logo.png" className="h-8 w-auto" />
+              <img alt="" src="/logo_txt@4x.png" className="h-8 w-auto" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -146,7 +147,8 @@ function App() {
                 <br />2025-03-31: 独自ドメインメールを設定しました - さぶや
                 <br />2025-03-31: 作っているものを木の栞から木のコンピューターにアップデートしました - さぶや
                 <br /><br />2025-04-01: ペーパープロト、欲しいとはじめて言われたので差し上げました。そんな製作過程の写真をトップに配置しました。もしウェブメディアなどの皆さんがご覧になっていた場合、メディアキットとしてどうぞ。
-                <br　/>
+                <br /><br />2025-04-05: 以前作っていただいたLapisのロゴにアップデートしました。こちらは柊涼さんに描いていただきました。
+                <br />
               </p>
             </div>
             
