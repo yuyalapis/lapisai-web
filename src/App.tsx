@@ -116,7 +116,7 @@ function App() {
               Produced by Lapis AI<br />
               By 株式会社Rozen
             </h1>
-            <p className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-xl">
+            <p className="mt-8 text-pretty text-xl font-semibold text-gray-800 sm:text-xl">
               いい栞が、ない<br />
               本当にない<br />
               <br />
@@ -146,7 +146,7 @@ function App() {
               </a>
             </div>
             <div className="text-left">
-              <p className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-xl/8">
+              <p className="mt-8 text-pretty text-xl font-semibold text-gray-800 sm:text-xl/8">
               
                 [今日の開発日記] <br />
                 2025-03-29: プロジェクト始動 - さぶや<br /><br />
