@@ -104,7 +104,7 @@ function App() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 mt-21 lg:mx-8 bg-[url(/public/hex.jpg)] bg-center bg-repeat ">
+      <div className="relative isolate px-6 my-28 lg:mx-8 bg-[url(/public/hex.jpg)] bg-center bg-repeat ">
         <div className="mx-auto max-w-2xl py-16 sm:py-48 lg:py-28">
           <div className="w-full place-items-center">
             <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover.jpg" alt="Lapis I prototype image" />
