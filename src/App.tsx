@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="bg-white ">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className="absolute inset-x-0 top-0 z-50 bg-white">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -104,7 +104,7 @@ function App() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 my-28 lg:mx-8 bg-[url(/public/hex.jpg)] bg-center bg-repeat ">
+      <div className="relative isolate px-6 my-28 lg:mx-8 bg-gradient-to-br from-sky-100 via-slate-50 to-white ">
         <div className="mx-auto max-w-2xl py-16 sm:py-48 lg:py-28">
           <div className="w-full place-items-center">
             <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover.jpg" alt="Lapis I prototype image" />
