@@ -104,7 +104,7 @@ function App() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-1 lg:px-8 bg-[url(/public/hex.jpg)] bg-center bg-repeat ">
+      <div className="relative isolate mx-6 pt-1 lg:mx-8 bg-[url(/public/hex.jpg)] bg-center bg-repeat ">
         <div className="mx-auto max-w-2xl py-16 sm:py-48 lg:py-28">
           <div className="w-full place-items-center">
             <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover.jpg" alt="Lapis I prototype image" />
@@ -116,7 +116,7 @@ function App() {
               Produced by Lapis AI<br />
               By 株式会社Rozen
             </h1>
-            <p className="mt-8 text-pretty text-lg font-semibold text-gray-900 sm:text-xl">
+            <p className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-xl">
               いい栞が、ない<br />
               本当にない<br />
               <br />
@@ -146,7 +146,7 @@ function App() {
               </a>
             </div>
             <div className="text-left">
-              <p className="mt-8 text-pretty text-lg font-semibold text-gray-900 sm:text-xl/8">
+              <p className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-xl/8">
               
                 [今日の開発日記] <br />
                 2025-03-29: プロジェクト始動 - さぶや<br /><br />
