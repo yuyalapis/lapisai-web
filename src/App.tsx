@@ -104,8 +104,8 @@ function App() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 my-12 lg:mx-8 bg-gradient-to-br from-sky-100 via-slate-50 via-30% to-white to-90% ">
-        <div className="mx-auto max-w-2xl py-8 sm:py-48 lg:py-28">
+      <div className="relative isolate px-6 my-12 lg:mx-8 bg-slate-100 ">
+        <div className="mx-auto max-w-2xl py-12 sm:py-12 lg:py-18">
           <div className="w-full place-items-center">
             <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover.jpg" alt="Lapis I prototype image" />
           </div>
