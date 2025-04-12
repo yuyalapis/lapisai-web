@@ -166,6 +166,12 @@ function App() {
                 yuya@lapisai.com
               </a>
             </div>
+
+            <div className="py-1 flex items-center justify-center gap-x-6">
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                更新日: 2025/04/10
+              </a>
+            </div>
           </div>
         </div>
         
