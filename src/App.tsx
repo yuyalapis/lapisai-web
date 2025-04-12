@@ -103,7 +103,7 @@ function App() {
       </header>
 
       <div className="relative isolate px-6 mt-12 lg:mx-8 bg-slate-100 ">
-        <div className="mx-auto max-w-2xl pt-12 sm:py-12 lg:py-18">
+        <div className="mx-auto max-w-2xl pt-12 sm:pt-12 lg:pt-18">
           <div className="w-full place-items-center">
             <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover.jpg" alt="Lapis I prototype image" />
           </div>
