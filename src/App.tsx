@@ -143,6 +143,21 @@ function App() {
                 Amazon にて販売予定
               </a>
             </div>
+
+            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+              トランジスターについて
+            </h3>
+            <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+              トランジスターというと謎の存在と思われている素子代表なのではないでしょうか<br />
+              回路図を見てみると、なにやらダイオードのような部分がありますが、ダイオードで言えばアノードからカソードにしか電流が流れないように、pからnに電流が流れるので、pnp型とnpn型の2つのタイプのトランジスターが存在します<br />
+              トランジスターの矢印方向に電流を流すためには0.7V以上の電圧をかけなければならず、0.7V以上の電圧が加わったとき、ベースをパスするように大電流が流れます。増幅の効果があるわけです<br />
+              トランジスター Lチカ で調べると、大体の方が2つトランジスターを使っているようです<br />
+              これはインバーテット・ダーリントン回路と呼ばれ、2つのトランジスターを使って大きな増幅度を得るために用いられます<br />
+              シンプルに実装したいなら1つでもいいはずで、これは電流負還回路とよばれているようです<br />
+              コンデンサーに流れ込む電流を抵抗値によって調整し、npn型トランジスターに0.7V以上の電位差が生じたとき、ダイオードが光るような回路にすると、チカチカ光るわけです<br />
+              
+            </p>
+            
             <div className="text-left">
               <p className="mt-8 text-pretty text-base font-semibold text-gray-700 sm:text-lg/8">
               
