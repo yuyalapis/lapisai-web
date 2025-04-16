@@ -147,7 +147,7 @@ function App() {
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               トランジスターについて
             </h3>
-            <p className="mt-4 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
               トランジスターというと謎の存在と思われている素子代表なのではないでしょうか<br />
               回路図を見てみると、なにやらダイオードのような部分がありますが、ダイオードで言えばアノードからカソードにしか電流が流れないように、pからnに電流が流れるので、pnp型とnpn型の2つのタイプのトランジスターが存在します<br />
               トランジスターの矢印方向に電流を流すためには0.7V以上の電圧をかけなければならず、0.7V以上の電圧が加わったとき、ベースをパスするように大電流が流れます。増幅の効果があるわけです<br />
@@ -156,6 +156,31 @@ function App() {
               シンプルに実装したいなら1つでもいいはずで、これは電流負帰還回路とよばれているようです<br />
               コンデンサーに流れ込む電流を抵抗値によって調整し、npn型トランジスターに0.7V以上の電位差が生じたとき、ダイオードが光るような回路にすると、チカチカ光るわけです<br />
               
+            </p>
+
+            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+              栞サイズのケータイ
+            </h3>
+            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+              コンデンサーの集積回路化にしたがって、ケータイはLSIとともに小型化し、タウンページを抱えているようなサイズは過去の写真だけのものになりました<br />
+              しかし実際、最近の携帯は年々重くなり、高くなる。もっと軽い栞サイズのスマホが見つからなかったので、製作しております<br />
+              ケータイとのちょっと違う関わり方になるといいなと思っております<br />
+              
+            </p>
+
+            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+              白と黒のフィールド
+            </h3>
+            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+              情報の世界って、そもそもどのようなフィールドなのでしょうか？0と1がどのように絡み合っているにでしょうか？<br />
+              大学で習ったかたもいらっしゃるかと思いますが、情報の世界は論理和と論理積を基本にして成り立っている世界です<br />
+              記号で表すと、a△b (下の棒はない、aかつb) と a▽b (同じく上の棒がない、aまたはb) の世界を追いかけていくわけです<br />
+              なぜ + で書かないのかというと、1+1を考えるとき、1という論理的なバックアップがあるフィールド、代数の世界の体を想定していないからかもしれません<br />
+              そのようなフィールド、1+1 が 1 になるフィールドは右ignore演算子・左ignore演算子を考えればよく、pythonでいえば (a, b): return a というだけのことで、これを +. と書くことにします<br />
+              積については通常の積を考え、和については 1+0 := hot_+(1, 0) := 1+.0 = 1, 0+1 := hot_+(0, 1) := 0.+1 = 1 となるように、要素によって演算子を選択するための hot関数 を導入すれば、数学としてのフィールドとすることができます<br />
+              これは zero ring にはならない、つまり 1=0 の空間にはならないことに注意します<br />
+              右ignore演算子やhot関数は私の中の用語なので、初出かと思います<br />
+              hot関数は、直積における自然な写像って何で要素分解って定義されているんだという疑問から考えました<br />
             </p>
             
             <div className="text-left">
