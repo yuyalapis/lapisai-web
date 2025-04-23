@@ -141,8 +141,6 @@ function App() {
                     さぶや
                   </p>
                   <div className="text-gray-900 font-bold text-xl mb-2">博麗霊夢 アクリルポストカード</div>
-      
-                  </div>
                 </div>
               </div>
             </div>
