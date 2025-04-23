@@ -132,7 +132,7 @@ function App() {
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               販売アクリルポストカード一覧
             </h3>
-            <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div className="max-w-sm w-full lg:max-w-full lg:flex">
               <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/reimu001.jpg')" title="hakurei reimu">
               </div>
               <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
