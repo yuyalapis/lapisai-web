@@ -132,17 +132,10 @@ function App() {
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               販売アクリルポストカード一覧
             </h3>
-            <div className="max-w-sm w-full lg:max-w-full lg:flex">
-              <img className="w-full" src="/reimu001.jpg" alt="Hakurei Reimu" />
-              <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                <div className="mb-8">
-                  <p className="text-sm text-gray-600 flex items-center">
-                    さぶや
-                  </p>
-                  <div className="text-gray-900 font-bold text-xl mb-2">博麗霊夢 アクリルポストカード</div>
-                </div>
-              </div>
-            </div>
+            <h3 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
+              販売するイラストが一覧表示されます<br />
+              イラストは3000円以上で販売されます
+            </h3>
             
             <div className="text-left">
               <p className="mt-8 text-pretty text-base font-semibold text-gray-700 sm:text-lg/8">
