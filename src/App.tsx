@@ -130,7 +130,7 @@ function App() {
             </div>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              販売アクリルポストカード一覧
+              アクリルポストカード一覧
             </h3>
             <h3 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
               販売するイラストが一覧表示されます<br />
