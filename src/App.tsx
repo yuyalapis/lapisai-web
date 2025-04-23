@@ -38,7 +38,7 @@ function App() {
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Amazon にて販売予定
+                オーダー
               </a>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -93,7 +93,7 @@ function App() {
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    2025年春、発売予定
+                    アクリルポストカード
                   </a>
                 </div>
               </div>
@@ -105,128 +105,77 @@ function App() {
       <div className="relative isolate px-6 mt-12 lg:mx-8 bg-slate-100 ">
         <div className="mx-auto max-w-2xl pt-12 sm:pt-12 lg:pt-18">
           <div className="w-full place-items-center">
-            <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover.jpg" alt="Lapis I prototype image" />
+            <img className="object-cover object-center w-full rounded-lg" src="/reimu001.jpg" alt="illust hanbai top image" />
           </div>
           
           <div className="text-center">
             <h1 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
-              木のコンピューター Lapis<br />
-              Produced by Lapis AI<br />
-              By 株式会社Rozen
+              アクリルカードにして<br />
+              イラストを販売
             </h1>
             <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              いい栞が、ない<br />
-              本当にない<br />
+              美麗なアクリルポストカード<br />
+              あなたのイラストを登録するだけで<br />
+              すぐに販売できます<br />
               <br />
-              ジュンク堂本店のレジ前の栞とか良かったりするんですが、<br />
-              プラスチックなんですよね<br />
-              <br />
-              ということで、<br />
-              厳選した木の栞を作っております<br />
-              <br />
-              のですが、見つけちゃいました<br />
-              スタンダードなんとかに木の栞5枚セット300円で売っておりました<br />
-              ウォールナットツリーの切られた木肌がきらきら輝いておりました<br />
-              <br />
-              その時思ったのです<br />
-              これが見えるトランシーバーだったら<br />
-              通信できたら夢のようだと<br />
-              木のコンピューター Lapis<br />
-              無線通信の技術を回路設計・コンデンサー選びから行い<br />
-              プロトタイプ Lapis I が完成しました
+              
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Amazon にて販売予定
+                オーダー
               </a>
             </div>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              トランジスターについて
+              販売アクリルポストカード一覧
             </h3>
-            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              トランジスターというと謎の存在と思われている素子代表なのではないでしょうか<br />
-              回路図を見てみると、なにやらダイオードのような部分がありますが、ダイオードで言えばアノードからカソードにしか電流が流れないように、pからnに電流が流れるので、pnp型とnpn型の2つのタイプのトランジスターが存在します<br />
-              トランジスターの矢印方向に電流を流すためには0.7V以上の電圧をかけなければならず、0.7V以上の電圧が加わったとき、ベースをパスするように大電流が流れます。増幅の効果があるわけです<br />
-              トランジスター Lチカ で調べると、大体の方が2つトランジスターを使っているようです<br />
-              これはインバーテット・ダーリントン接続と呼ばれ、2つのトランジスターを使って大きな増幅度を得るために用いられます<br />
-              シンプルに実装したいなら1つでもいいはずで、これは電流負帰還回路とよばれているようです<br />
-              コンデンサーに流れ込む電流を抵抗値によって調整し、npn型トランジスターに0.7V以上の電位差が生じたとき、ダイオードが光るような回路にすると、チカチカ光るわけです<br />
-              
-            </p>
-
-            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              栞サイズのケータイ
-            </h3>
-            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              コンデンサーの集積回路化にしたがって、ケータイはLSIとともに小型化し、タウンページを抱えているようなサイズは過去の写真だけのものになりました<br />
-              しかし実際、最近の携帯は年々重くなり、高くなる。もっと軽い栞サイズのスマホが見つからなかったので、製作しております<br />
-              ケータイとのちょっと違う関わり方になるといいなと思っております<br />
-              
-            </p>
-
-            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              白と黒のフィールド
-            </h3>
-            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              情報の世界って、そもそもどのようなフィールドなのでしょうか？0と1がどのように絡み合っているのでしょうか？<br />
-              大学で習った方もいらっしゃるかと思いますが、情報の世界は論理和と論理積を基本にして成り立っている世界です<br />
-              記号で表すと、a△b (下の棒はない、aかつb) と a▽b (同じく上の棒がない、aまたはb) の世界を追いかけていくわけです<br />
-              なぜ + で書かないのかというと、1+1を考えるとき、1という論理的なバックアップがあるフィールド、代数の世界の体を想定していないからかもしれません<br />
-              そのようなフィールド、1+1 が 1 になるフィールドは右ignore演算子・左ignore演算子を考えればよく、pythonでいえば (a, b): return a というだけのことで、これを +. と書くことにします<br />
-              積については通常の積を考え、和については 1+0 := hot_+(1, 0) := 1+.0 = 1, 0+1 := hot_+(0, 1) := 0.+1 = 1 となるように、要素によって演算子を選択するための hot関数 を導入すれば、数学としてのフィールドとすることができます<br />
-              これは zero ring にはならない、つまり 1=0 の空間にはならないことに注意します<br />
-              右ignore演算子やhot関数は私の中の用語なので、初出かと思います<br />
-              hot関数は、直積における自然な写像って何で要素分解って定義されているんだという疑問から考えました<br />
-            </p>
-
-            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              Intelligentia Exceptio: 機械仕かけの弁明
-            </h3>
-            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              喫茶店でコーヒーを飲みながら、たしか5年ほど前に、01の世界から知性が宿る、そのようなプログラムが書けないか模索していました<br />
-              当時辿り着いたのは、何でもいいから動くコードを書いて見せてというプログラムでした。割りとランダムに走り回って組み合わせてプログラムを書いていくプログラムです<br />
-              そこには例外処理、Exception を通じたプログラミング言語との対話がありました<br />
-              そして結局、ちょっと待つと、if文とprint文を組み合わせた非自明なコードを書いてきたのです<br />
-              ここで機械がプログラミングする時代になると言いたいわけではありません<br />
-              人間と機械との役割分担は、Exceptionを機械が担当する、こんなこと普通は考えないですが考えておきましたというランダムに走り回るエージェントとしてのAIという役割は確かにあり、デバッグ要因としてAIが安定して駆り出される日は近いはずです<br />
-              こうした一種のバディ感のある連携というか存在の仕方もあるのかなと思っております
-              
-            </p>
-
-            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              Symbol: GNDed
-            </h3>
-            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              こうした人間の領域と例外領域という役割分担は、サールの中国語の部屋からの脱出さえも可能にすることでしょう<br />
-              役に立った、喜んでいただけた。それが駆動となって、いわゆる強化学習が回れば、シンボルはもはや別のシンボルに依拠しているのではなく、logという時系列的な経験からくるものになり、ますますバディといえる存在へ近づいていくことでしょう<br />
-              <br />
-              
-            </p>
+            <div class="max-w-sm w-full lg:max-w-full lg:flex">
+  <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/card-left.jpg')" title="Woman holding a mug">
+  </div>
+  <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+    <div class="mb-8">
+      <p class="text-sm text-gray-600 flex items-center">
+        さぶや
+      </p>
+      <div class="text-gray-900 font-bold text-xl mb-2">博麗霊夢 アクリルポストカード</div>
+      
+      </div>
+    </div>
+  </div>
+</div> class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+        </svg>
+        Members only
+      </p>
+      <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+      <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+    </div>
+    <div class="flex items-center">
+      <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+      <div class="text-sm">
+        <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+        <p class="text-gray-600">Aug 18</p>
+      </div>
+    </div>
+  </div>
+</div>
             
             <div className="text-left">
               <p className="mt-8 text-pretty text-base font-semibold text-gray-700 sm:text-lg/8">
               
-                [今日の開発日記] <br />
-                2025-03-29: プロジェクト始動 - さぶや<br /><br />
-                2025-03-30: サイトをとりあえず動くようにしました。<br />このように頻繁にトップが更新できるサイトというのも珍しいのですが、構築まわりで何かございましたら yuya@lapisai.com までご連絡ください。<br />ちなみにReactで動いております。- さぶや<br />
-                <br />2025-03-31: 独自ドメインメールを設定しました - さぶや
-                <br />2025-03-31: 作っているものを木の栞から木のコンピューターにアップデートしました - さぶや
-                <br /><br />2025-04-01: ペーパープロト、欲しいとはじめて言われたので差し上げました。そんな製作過程の写真をトップに配置しました。もしウェブメディアなどの方がご覧になっていた場合、メディアキットとしてお使いください。
-                <br /><br />2025-04-05: 以前作っていただいたLapisのロゴにアップデートしました。こちらは柊涼さんに描いていただきました。
-                <br /><br />2025-04-12: こちらはデジタルな回路で、タッチパネルでブラウザーを見るなどできるようなキットとして販売予定ですが、アナログ回路もAMラジオやアンプ、無線通信の回路などキットとして面白そうと思っています。
-                <br /><br />2025-04-15: トランジスターについてのコラムを追記しました。回路に詳しくなっていきたいです。
-                <br /><br />2025-04-16: 情報の世界で基本となる1と0の世界について、白と黒のフィールドというコラムを追記しました
-                <br /><br />2025-04-17: Intelligentia Exceptio, Symbol: GNDed というコラムを追記しました
+                [今日の記録] <br />
+                2025-04-24: ここに独自ドメインで日記をつけることが出来ます - さぶや<br /><br />
+                
+                <br /><br />
               </p>
             </div>
             
             <div className="my-10 flex items-center justify-center gap-x-6">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                株式会社Rozen <span aria-hidden="true">→</span>
+                イラスト販売 Lapis AI - 株式会社Rozen <span aria-hidden="true">→</span>
                 <br />
                 東京都豊島区西池袋3丁目29番3号梅本ビル4D coba池袋内
                 <br />
@@ -236,7 +185,7 @@ function App() {
 
             <div className="py-1 flex items-center justify-center gap-x-6">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                更新日: 2025/04/16
+                更新日: 2025/04/24
               </a>
             </div>
           </div>
