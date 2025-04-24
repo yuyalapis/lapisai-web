@@ -20,7 +20,7 @@ const navigation = [
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const { data, error } = await supabase
+  const { data, error } = supabase
   .from('inqueries')
   .insert({ email: 'test@test.com', content: 'test content' })
   .select()
