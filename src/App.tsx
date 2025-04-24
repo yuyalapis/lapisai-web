@@ -9,7 +9,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import { createClient } from '@supabase/supabase-js'
 supabase_url = 'https://zafxbupguekmfsyiglps.supabase.co'
-supabase _key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InphZnhidXBndWVrbWZzeWlnbHBzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQzMjk3NjIsImV4cCI6MjA1OTkwNTc2Mn0.VwNp3k9BvOmISJ3xMhmF5rnuB7Ng1V_SraAPnZUz34o'
+supabase_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InphZnhidXBndWVrbWZzeWlnbHBzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQzMjk3NjIsImV4cCI6MjA1OTkwNTc2Mn0.VwNp3k9BvOmISJ3xMhmF5rnuB7Ng1V_SraAPnZUz34o'
 const supabase = createClient(supabase_url, supabase_key)
 
 const navigation = [
