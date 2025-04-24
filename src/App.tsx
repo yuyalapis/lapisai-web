@@ -7,6 +7,8 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+import { createClient } from '@supabase/supabase-js'
+
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Company', href: '#' },
