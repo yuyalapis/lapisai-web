@@ -150,6 +150,19 @@ function App() {
               <br />
               
             </p>
+
+            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+              アプリがストアからどれだけおすすめされたかを示す App authority score - アプリ信頼性スコア
+            </h3>
+            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+              アプリがストアからどれだけおすすめされたかをバックリンクのような手法で集計し可視化したのがアプリオーソリティースコアになります<br />
+              最大で4.0をとるこの指標を用いてアプリ分析ツール <br />
+              <a href="https://query.lapisai.com" className="text-sm font-semibold leading-6 text-indigo-600">
+                Query
+              </a>
+              をつくっています。v1としてとりあえず動くレベルになっています。ランキング形式で一覧できるまでを作りました
+              
+            </p>
             
             <div className="text-left">
               <p className="mt-8 text-pretty text-base font-semibold text-gray-700 sm:text-lg/8">
@@ -165,6 +178,7 @@ function App() {
                 <br /><br />2025-04-15: トランジスターについてのコラムを追記しました。回路に詳しくなっていきたいです。
                 <br /><br />2025-04-16: 情報の世界で基本となる1と0の世界について、白と黒のフィールドというコラムを追記しました
                 <br /><br />2025-04-17: Intelligentia Exceptio, Symbol: GNDed というコラムを追記しました
+                <br /><br />2025-04-17: query.lapisai.com をとりあえず動くレベルで作りました。ランキング形式でストアからどれだけおすすめされているかわかります
               </p>
             </div>
             
