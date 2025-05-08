@@ -35,10 +35,10 @@ function App() {
           </div>
           <div className="flex lg:flex-1">
             <a
-                href="#"
+                href="https://lapisai.com/query"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Amazon にて販売予定
+                アプリ分析ツール Query
               </a>
           </div>
           
@@ -58,6 +58,20 @@ function App() {
               Produced by Lapis AI<br />
               By 株式会社Rozen
             </h1>
+            <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+              アプリ分析ツールつくっています<br />
+              アップストアからアプリがどれくらいおすすめされているかを分析できます<br />
+              
+              
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="https://lapisai.com/query"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Query - アプリ信頼性スコア分析ツール
+              </a>
+            </div>
             <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
               いい栞が、ない<br />
               本当にない<br />
