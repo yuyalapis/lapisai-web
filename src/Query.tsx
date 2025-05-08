@@ -23,6 +23,7 @@ function Query() {
   useEffect(() => {
     set_called(1)
     console.log("useEffect called App.tsx")
+    document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
     const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score"
     fetch(url_app_authority_score).then(
       (response) => {
