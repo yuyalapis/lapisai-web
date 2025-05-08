@@ -8,6 +8,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import Home from "./Home"
+import Query from "./Query"
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/query" element={<Query />} />
         </Routes>
       </BrowserRouter>
     </div>
