@@ -8,6 +8,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import Home from "./Home"
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
 const navigation = [
   { name: 'Product', href: '#' },
