@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-function Query() {
+function Detail() {
   const [is_use_effect_called, set_called] = useState(0)
   const [score_data, set_score_data] = useState({
     "results":[{"app_authority_score":4.0,"score":15,"title": "App authority score loading...","url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"},{"app_authority_score":4.0,"score":15,"title":"アプリ信頼性スコアロード中です","url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"}
@@ -140,4 +140,4 @@ function Query() {
   );
 }
 
-export default Query;
+export default Detail;
