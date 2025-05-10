@@ -119,7 +119,7 @@ function Detail() {
                   }
                   {" "}
                   {!item["title"].includes("") && item['title']}
-                  {item["title"].includes("") && item['url_from'].split("/")[5]}
+                  {item["title"].includes("") && decodeURIComponent(item['url_from'].split("/")[5])}
 
                 </p>
               ))}
