@@ -25,7 +25,7 @@ function Detail() {
       }
     ],
     "searched":{
-      "title":"Learn Italian with Flashcards",
+      "title":"アプリ情報ロード中です",
       "url":"https://apps.apple.com/jp/app/learn-italian-with-flashcards/id1513029876?l=en-US"
     }
   })
@@ -45,6 +45,7 @@ function Detail() {
       (json_response) => {
         console.log(json_response)
         set_score_data(json_response)
+        document.title = score_data["searched"]["title"] + "の関連アプリと比較してスコア分析する - アプリ信頼性スコア分析ツール - Lapis AI"
       }
     )
   }, [])
@@ -83,25 +84,25 @@ function Detail() {
           
           <div className="text-center">
             <h1 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
+              {score_data["searched"]["title"]}の関連アプリと比較してスコア分析する
               App authority score - アプリ信頼性スコア分析ツール<br />
               Query - developed by Lapis AI by 株式会社Rozen
             </h1>
           
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              App authority score - アプリ信頼性スコアとは
+              App authority score - アプリ信頼性スコアによる関連アプリとの比較
             </h3>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
               App authority score (アプリ信頼性スコア) とは、ストアからどれだけおすすめされたかを表す指標です。<br />
-              アプリがおすすめする他のアプリの数は限られているので、webのバックリンクに似た仕組みでアプリの信頼性を計ることができます。<br />
-              性質のよい空間で考えることになるので、データ数にたいしてロバスト、つまりあまり変化しないなど、指標として安定しているわけです。<br />
-              0.0 から最大で 4.0 をとります。
+              関連するアプリの間でおすすめされている度合いがどれくらい異なるかを一覧できます。<br />
+              数値は 0.0 から最大で 4.0 をとり、毎日変動します。
               
             </p>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              App Authority Score Realtime Ranking <br /> アプリオーソリティースコアリアルタイムランキング
+              App Authority Score による関連アプリの比較一覧
             </h3>
               {score_data?.results.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
