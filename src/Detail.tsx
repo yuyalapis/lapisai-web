@@ -118,7 +118,8 @@ function Detail() {
                     <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1) }</span>
                   }
                   {" "}
-                  {item['title']}
+                  {!item["title"].includes("") && item['title']}
+                  {item["title"].includes("") && item['url_from'].split("/")[5]}
 
                 </p>
               ))}
