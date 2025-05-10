@@ -19,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/query" element={<Query />} />
+          <Route path="*" element={<h1>404</h1>} />
         </Routes>
       </BrowserRouter>
     </div>
