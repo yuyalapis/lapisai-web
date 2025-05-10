@@ -12,8 +12,22 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 function Detail() {
   const [is_use_effect_called, set_called] = useState(0)
   const [score_data, set_score_data] = useState({
-    "results":[{"app_authority_score":4.0,"score":15,"title": "App authority score loading...","url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"},{"app_authority_score":4.0,"score":15,"title":"アプリ信頼性スコアロード中です","url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"}
-               ]
+    "results":[
+      {
+        "app_authority_score":0.22580644,
+        "title":"VOA%20Learning%20English%E2%80%AA.%E2%80%AC",
+        "url_from":"https://apps.apple.com/jp/app/voa-learning-english/id1590950337?l=en-US"
+      },
+      {
+        "app_authority_score":0.06451613,
+        "title":"BUZL%20Voice",
+        "url_from":"https://apps.apple.com/jp/app/buzl-voice/id907738125?l=en-US"
+      }
+    ],
+    "searched":{
+      "title":"Learn Italian with Flashcards",
+      "url":"https://apps.apple.com/jp/app/learn-italian-with-flashcards/id1513029876?l=en-US"
+    }
   })
 
   useEffect(() => {
