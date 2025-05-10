@@ -35,8 +35,9 @@ function Detail() {
     console.log("useEffect called App.tsx")
     const {appname} = useParams()
     document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
-    const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score"
-    fetch(url_app_authority_score).then(
+    const url_app_detail = "https://query-backend-topaz.vercel.app/app_detail?appname="+appname
+    
+    fetch(url_app_detail).then(
       (response) => {
         console.log(response)
         return response.json()
