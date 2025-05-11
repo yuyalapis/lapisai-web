@@ -13,12 +13,12 @@ function Detail() {
     "results":[
       {
         "app_authority_score":0.22580644,
-        "title":"VOA Learning English",
+        "title":"関連アプリ情報ロード中です",
         "url_from":"https://apps.apple.com/jp/app/voa-learning-english/id1590950337?l=en-US"
       },
       {
         "app_authority_score":0.06451613,
-        "title":"BUZL Voice",
+        "title":"loading...",
         "url_from":"https://apps.apple.com/jp/app/buzl-voice/id907738125?l=en-US"
       }
     ],
