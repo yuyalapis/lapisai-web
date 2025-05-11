@@ -51,7 +51,7 @@ function Detail() {
         <nav aria-label="Global" className="flex items-center p-0 lg:px-8">
           
           <div className="flex flex-1 justify-center mr-auto">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="https://lapisai.com/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img alt="" src="/logo.png" className="h-8 w-auto" />
             </a>
