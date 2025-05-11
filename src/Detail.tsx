@@ -1,13 +1,10 @@
 import {useParams} from "react-router-dom"
 
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
 import { useState, useEffect } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 function Detail() {
   const {appname} = useParams()
@@ -32,10 +29,7 @@ function Detail() {
   })
 
   useEffect(() => {
-    set_called(1)
-    console.log("useEffect called App.tsx")
-    
-    document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
+    document.title = "関連アプリと比較してスコア分析する - アプリ信頼性スコア分析ツール Query - Lapis AI"
     const url_app_detail = "https://query-backend-topaz.vercel.app/app_detail?appname="+appname
     
     fetch(url_app_detail).then(
@@ -47,7 +41,6 @@ function Detail() {
       (json_response) => {
         console.log(json_response)
         set_score_data(json_response)
-        document.title = score_data["searched"]["title"] + "の関連アプリと比較してスコア分析する - アプリ信頼性スコア分析ツール - Lapis AI"
       }
     )
   }, [])
@@ -118,8 +111,8 @@ function Detail() {
                     <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1) }</span>
                   }
                   {" "}
-                  {!item["title"].includes("") && item['title']}
-                  {item["title"].includes("") && decodeURIComponent(item['url_from'].split("/")[5])}
+                  {!(item['title'].includes("ã") || item['title'].includes("â")) && item['title']}
+                  {(item['title'].includes("ã") || item['title'].includes("â")) && decodeURIComponent(item['url_from'].split("/")[5])}
 
                 </p>
               ))}
