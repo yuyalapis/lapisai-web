@@ -42,7 +42,7 @@ function Query() {
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50 bg-white">
-        <nav aria-label="Global" className="flex items-center p-6 lg:px-8">
+        <nav aria-label="Global" className="flex items-center p-0 lg:px-8">
           
           <div className="flex flex-1 justify-center mr-auto">
             <a href="#" className="-m-1.5 p-1.5">
