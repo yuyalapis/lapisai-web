@@ -63,9 +63,6 @@ function Detail() {
               <img alt="" src="/logo_txt@4x.png" className="h-8 w-auto" />
             </a>
           </div>
-          <div className="flex lg:flex-1">
-            
-          </div>
           
         </nav>
         
