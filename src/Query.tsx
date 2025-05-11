@@ -51,7 +51,7 @@ function Query() {
             </a>
           </div>
           
-          <div className="mx-12">
+          <div className="mx-4">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img alt="" src="/logo_txt@4x.png" className="h-8 w-auto" />
