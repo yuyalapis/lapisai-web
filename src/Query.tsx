@@ -44,7 +44,7 @@ function Query() {
       <header className="absolute inset-x-0 top-0 z-50 bg-white">
         <nav aria-label="Global" className="flex items-center p-6 lg:px-8">
           
-          <div className="flex lg:flex-1 justify-center mr-auto">
+          <div className="flex flex-1 justify-center mr-auto">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img alt="" src="/logo.png" className="h-8 w-auto" />
@@ -58,7 +58,7 @@ function Query() {
             </a>
           </div>
 
-          <div className="flex lg:flex-1 justify-center ml-auto">
+          <div className="flex flex-1 justify-center ml-auto">
             <a
                 href="https://lapisai.com/query"
                 target="_blank"
