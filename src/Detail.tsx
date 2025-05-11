@@ -83,7 +83,7 @@ function Detail() {
           
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              App Store によると、こちらのアプリからオススメされました - アプリ信頼性スコアによる関連アプリとの比較
+              App Authority Score - アプリ信頼性スコアによる関連アプリとの比較
             </h3>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
@@ -94,7 +94,7 @@ function Detail() {
             </p>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              App Authority Score による関連アプリの比較一覧
+               App Store によると、こちらのアプリからオススメされました
             </h3>
               {score_data?.results.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
