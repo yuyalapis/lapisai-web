@@ -110,7 +110,7 @@ function Query() {
                     <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1) }</span>
                   }
                   {" "}
-                  <a target="_blank" href={item['url_to']} className="-m-1.5 p-1.5 text-blue-700">
+                  <a target="_blank" href={item['url_to']} className="-m-1.5 p-1.5 text-sky-500">
                     {item['title']}
                   </a>
                 </p>
