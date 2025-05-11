@@ -1,11 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
 import { useState, useEffect } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -14,15 +11,23 @@ const navigation = [
 
 function Query() {
   const [is_use_effect_called, set_called] = useState(0)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [score_data, set_score_data] = useState({
-    "results":[{"app_authority_score":4.0,"score":15,"title": "App authority score","url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"},{"app_authority_score":4.0,"score":15,"title":"アプリ信頼性スコア","url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"}
-               ]
+    "results":[
+      {
+        "app_authority_score":4.0,
+        "score":15,
+        "title": "App authority score",
+        "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
+      },
+      {
+        "app_authority_score":4.0,
+        "score":15,"title":"アプリ信頼性スコア",
+        "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
+      }
+    ]
   })
 
   useEffect(() => {
-    set_called(1)
-    console.log("useEffect called App.tsx")
     document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
     const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score"
     fetch(url_app_authority_score).then(
@@ -56,12 +61,7 @@ function Query() {
               <img alt="" src="/logo_txt@4x.png" className="h-8 w-auto" />
             </a>
           </div>
-          <div className="flex lg:flex-1">
-            
-          </div>
-          
         </nav>
-        
       </header>
 
       <div className="relative isolate px-6 mt-12 lg:mx-8 bg-slate-100 ">
@@ -90,7 +90,7 @@ function Query() {
             </p>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              App Authority Score Realtime Ranking <br /> アプリオーソリティースコアリアルタイムランキング
+              App Authority Score Realtime Ranking <br /> アプリオーソリティースコア リアルタイムランキング
             </h3>
               {score_data?.results.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
@@ -104,8 +104,9 @@ function Query() {
                     <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1) }</span>
                   }
                   {" "}
-                  {item['title']}
-
+                  <a href="https://lapisai.com/app/{item['url_to'].split("/")[5]}/" className="-m-1.5 p-1.5 text-indigo-800">
+                    {item['title']}
+                  </a>
                 </p>
               ))}
             
