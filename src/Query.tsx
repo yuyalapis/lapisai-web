@@ -4,10 +4,6 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 import { useState, useEffect } from 'react'
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 function Query() {
   const [is_use_effect_called, set_called] = useState(0)
@@ -44,22 +40,32 @@ function Query() {
   }, [])
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50 bg-white">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
+        <nav aria-label="Global" className="flex items-center p-6 lg:px-8">
+          <div className="flex-1 flex justify-center mr-auto">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img alt="" src="/logo.png" className="h-8 w-auto" />
               
             </a>
           </div>
-          <div className="flex lg:flex-1">
+          <div className="mx-12">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               
               <img alt="" src="/logo_txt@4x.png" className="h-8 w-auto" />
             </a>
+          </div>
+
+          <div className="flex-1 flex justify-center ml-auto">
+            <a
+                href="https://lapisai.com/query"
+                target="_blank"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                アプリ分析ツール Query
+              </a>
           </div>
         </nav>
       </header>
