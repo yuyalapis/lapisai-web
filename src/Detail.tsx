@@ -13,12 +13,12 @@ function Detail() {
     "results":[
       {
         "app_authority_score":0.22580644,
-        "title":"VOA%20Learning%20English%E2%80%AA.%E2%80%AC",
+        "title":"VOA Learning English",
         "url_from":"https://apps.apple.com/jp/app/voa-learning-english/id1590950337?l=en-US"
       },
       {
         "app_authority_score":0.06451613,
-        "title":"BUZL%20Voice",
+        "title":"BUZL Voice",
         "url_from":"https://apps.apple.com/jp/app/buzl-voice/id907738125?l=en-US"
       }
     ],
