@@ -79,7 +79,7 @@ function Detail() {
           
           <div className="text-center">
             <h1 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
-              {score_data["searched"]["title"]}の関連アプリと比較してスコア分析する
+              {score_data["searched"]["title"]}の関連アプリと比較して分析する<br />
               App authority score - アプリ信頼性スコア分析ツール<br />
               Query - developed by Lapis AI by 株式会社Rozen
             </h1>
