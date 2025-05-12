@@ -5,7 +5,7 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 import { useState, useEffect } from 'react'
 
 
-function Query() {
+function Siteref() {
   const [is_use_effect_called, set_called] = useState(0)
   const [score_data, set_score_data] = useState({
     "results":[
@@ -181,4 +181,4 @@ function Query() {
   );
 }
 
-export default Query;
+export default Siteref;
