@@ -12,10 +12,11 @@ function Sitemap() {
   ]
   
   const sitemap_instance = sitemap.createSitemap({hostname, url_data, })
+  const sitemap_string = sitemap_instance.toString()
   
   return (
     <div className="bg-white">
-      {sitemap_instance.toString()}
+      {sitemap_string}
     </div>
   );
 }
