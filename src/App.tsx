@@ -10,7 +10,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Home from "./Home"
 import Query from "./Query"
 import Detail from "./Detail"
-import Ref from "./Ref"
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/query" element={<Query />} />
           <Route path="/app/:appname" element={<Detail />} />
-          <Route path="/ref" element={<Ref />} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
       </BrowserRouter>
