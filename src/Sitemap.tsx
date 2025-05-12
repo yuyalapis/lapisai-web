@@ -12,10 +12,25 @@ function Sitemap() {
   ]
   })
 
+  const [score_data, set_score_data] = useState({
+    "results":[
+      {
+        "app_authority_score":4.0,
+        "score":15,
+        "title": "App authority score",
+        "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
+      },
+      {
+        "app_authority_score":4.0,
+        "score":15,"title":"アプリ信頼性スコア",
+        "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
+      }
+    ]
+  })
+  
   useEffect(() => {
-    document.title = "sitemap"
-    const url_sitemap = "https://query-backend-topaz.vercel.app/sitemap"
-    fetch(url_sitemap).then(
+    const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score"
+    fetch(url_app_authority_score).then(
       (response) => {
         console.log(response)
         return response.json()
@@ -23,7 +38,7 @@ function Sitemap() {
     ).then(
       (json_response) => {
         console.log(json_response)
-        set_url_data(json_response)
+        set_score_data(json_response)
       }
     )
   }, [])
@@ -32,7 +47,7 @@ function Sitemap() {
     <div className="bg-white">
       {url_data?.results.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-xs text-gray-800 sm:text-lg">
-                  {"<url>"}{item['url']}{"</url>"}
+                  {"<url>"+item['url_to']+"</url>"}
                 </p>
               ))}
     </div>
