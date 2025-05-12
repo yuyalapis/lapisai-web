@@ -3,7 +3,6 @@ import './App.css'
 import { useState, useEffect } from 'react'
 
 const sitemap = require('sitemap')
-const fs = require('fs')
 const hostname = 'https://lapisai.com'
 
 function Sitemap() {
@@ -13,11 +12,10 @@ function Sitemap() {
   ]
   
   const sitemap_instance = sitemap.createSitemap({hostname, url_data, })
-  fs.writeFileSync('./public/sitemap.xml', sitemap_instance.toString())
   
   return (
     <div className="bg-white">
-      xml rendered
+      {sitemap_instance.toString()}
     </div>
   );
 }
