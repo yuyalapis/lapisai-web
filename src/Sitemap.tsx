@@ -31,8 +31,8 @@ function Sitemap() {
   return (
     <div className="bg-white">
       {url_data?.results.map(item => (
-                <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-                  {"<url>"} {item['url']} {"</url>"}
+                <p className="mt-2 text-left text-pretty text-base font-xs text-gray-800 sm:text-lg">
+                  {"<url>"}{item['url']}{"</url>"}
                 </p>
               ))}
     </div>
