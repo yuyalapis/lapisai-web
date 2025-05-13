@@ -100,7 +100,7 @@ function Siteref() {
             </h3>
               {score_data?.results.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-                  {item['url_to']}
+                  {'<url><loc>'+item['url_to']+'</loc><priority>0.8</priority><lastmod>2025-05-08T15:35:24+09:00</lastmod></url>'}
                 </p>
               ))}
             
