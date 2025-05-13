@@ -9,11 +9,12 @@ import { useState, useEffect } from 'react'
 function Detail() {
   const {appname} = useParams()
   const [is_use_effect_called, set_called] = useState(0)
+  const initial_h1 = appname+" 関連アプリ情報ロード中です"
   const [score_data, set_score_data] = useState({
     "results":[
       {
         "app_authority_score":0.22580644,
-        "title":"関連アプリ情報ロード中です",
+        "title":initial_h1,
         "url_from":"https://apps.apple.com/jp/app/voa-learning-english/id1590950337?l=en-US"
       },
       {
@@ -23,13 +24,13 @@ function Detail() {
       }
     ],
     "searched":{
-      "title":"アプリ情報ロード中です",
+      "title":initial_h1,
       "url":"https://apps.apple.com/jp/app/learn-italian-with-flashcards/id1513029876?l=en-US"
     }
   })
 
   useEffect(() => {
-    document.title = "関連アプリと比較してスコア分析する - アプリ信頼性スコア分析ツール Query - Lapis AI"
+    document.title = appname+" 関連アプリと比較してスコア分析する - アプリ信頼性スコア分析ツール Query - Lapis AI"
     const url_app_detail = "https://query-backend-topaz.vercel.app/app_detail?appname="+appname
     
     fetch(url_app_detail).then(
