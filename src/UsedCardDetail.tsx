@@ -114,7 +114,7 @@ function UsedCardDetail() {
               <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
                 関連するカード - カード中古買取価格 {item["key"]}
               </h3>
-              {item[item["key"]].map(elem => (
+              {keyword = item["key"], item[keyword].map(elem => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{elem["price"].toLocaleString()}{"円"}</span>
                   {" "}
