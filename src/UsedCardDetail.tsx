@@ -7,56 +7,24 @@ import { useState, useEffect } from 'react'
 
 function UsedCardDetail() {
   const [price_data, set_price_data] = useState({
-  "result_up":[
-    {
-      "after": {
-          "saved_at": "2025-05-10",
-          "price": 1500,
-          "title": "loading...",
-          "category": "loading...",
-          "url": "https://lapisai.com"
-        },
-      "before": {
-          "saved_at": "2025-05-10",
-          "price": 1500,
-          "title": "loading...",
-          "category": "loading...",
-          "url": "https://lapisai.com"
-        }
-      }
-    ],
-  "result_down":[
-    {
-      "after": {
-          "saved_at": "2025-05-10",
-          "price": 1500,
-          "title": "loading...",
-          "category": "loading...",
-          "url": "https://lapisai.com"
-        },
-      "before": {
-          "saved_at": "2025-05-10",
-          "price": 1500,
-          "title": "loading...",
-          "category": "loading...",
-          "url": "https://lapisai.com"
-        }
-      }
-    ],
+    "detail":{
+      "saved_at": "2025-05-10",
+      "price": 1500,
+      "title": "loading...",
+      "category": "loading...",
+      "region": "card"
+    },
     "results":[
       {
-        "saved_at": "2025-05-10",
-        "price": 1500,
-        "title": "loading...",
-        "category": "loading...",
-        "url": "https://lapisai.com"
-      },
-      {
-        "saved_at": "2025-05-10",
-        "price": 1000,
-        "title": "カード買取情報ロード中",
-        "category": "カード買取情報ロード中",
-        "url": "https://lapisai.com"
+        "key": "keyword",
+        "keyword": [{
+          "saved_at": "2025-05-10",
+          "price": 1500,
+          "title": "loading...",
+          "category": "loading...",
+          "url": "https://lapisai.com",
+          "region": "card"
+        }]
       }
     ]
   })
@@ -111,7 +79,7 @@ function UsedCardDetail() {
       <div className="relative isolate px-6 mt-12 lg:mx-8 bg-zinc-100 ">
         <div className="mx-auto max-w-2xl pt-12 sm:pt-12 lg:pt-18">
           <div className="w-full place-items-center">
-            <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover_query.jpg" alt="Lapis I prototype image" />
+            <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover_used.jpg" alt="Lapis I prototype image" />
           </div>
           
           <div className="text-center">
@@ -133,49 +101,32 @@ function UsedCardDetail() {
             </p>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              価格が上がったカード - カード中古買取価格 上昇リアルタイムランキング
+              カード中古買取価格
             </h3>
-              {price_data?.result_up.map(item => (
+              {price_data?.detail.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-                  <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{"+"}{(item["after"]["price"] - item['before']["price"]).toLocaleString()}{"円"}</span>
+                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(item["price"]).toLocaleString()}{"円"}</span>
                   {" "}
-                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(item["after"]["price"]).toLocaleString()}{"円"}</span>
-                  
-                  {" "}
-                  <a target="_blank" href={item["after"]['url']} className="-m-1.5 p-1.5 text-cyan-800">
-                    {item["after"]['title']}
-                  </a>
+                  {item['title']}
                 </p>
               ))}
 
-            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              価格が下がったカード - カード中古買取価格 下落リアルタイムランキング
-            </h3>
-              {price_data?.result_down.map(item => (
+            {price_data?.results.map(item => (
+            <div>
+              <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+                関連するカード - カード中古買取価格 {item["key"]}
+              </h3>
+              {item[item["key"]].map(elem => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-                  <span className="px-3 py-1 bg-yellow-500 text-white rounded-full text-xs" >{"-"}{(item["before"]["price"] - item['after']["price"]).toLocaleString()}{"円"}</span>
+                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{elem["price"].toLocaleString()}{"円"}</span>
                   {" "}
-                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(item["after"]["price"]).toLocaleString()}{"円"}</span>
-                  {" "}
-                  <a target="_blank" href={item["after"]['url']} className="-m-1.5 p-1.5 text-cyan-800">
-                    {item["after"]['title']}
+                  <a target="_blank" href={elem['url']} className="-m-1.5 p-1.5 text-cyan-800">
+                    {elem['title']}
                   </a>
                 </p>
               ))}
-
-            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              価格の高いカード - カード中古買取価格 リアルタイムランキング
-            </h3>
-              {price_data?.results.map(item => (
-                <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{item['price'].toLocaleString()}{"円"}</span>
-                  
-                  {" "}
-                  <a target="_blank" href={item['url']} className="-m-1.5 p-1.5 text-cyan-800">
-                    {item['title']}
-                  </a>
-                </p>
-              ))}
+            </duv>
+            ))}
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               アイテム別中古価格推移の3分類
