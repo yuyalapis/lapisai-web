@@ -98,7 +98,7 @@ function UsedCard() {
 
           <div className="flex flex-1 justify-center ml-auto">
             <a
-                href="https://lapisai.com/query"
+                href="https://lapisai.com/query-used-price-card"
                 target="_blank"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
@@ -111,18 +111,18 @@ function UsedCard() {
       <div className="relative isolate px-6 mt-12 lg:mx-8 bg-zinc-100 ">
         <div className="mx-auto max-w-2xl pt-12 sm:pt-12 lg:pt-18">
           <div className="w-full place-items-center">
-            <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover_used.jpg" alt="Lapis I prototype image" />
+            <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover_query.jpg" alt="Lapis I prototype image" />
           </div>
           
           <div className="text-center">
             <h1 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
-              時系列分析 - カード買取中古価格分析ツール<br />
-              Query - developed by Lapis AI by 株式会社Rozen
+              カード買取中古価格分析ツール<br />
+              Query - 時系列分析 developed by Lapis AI by 株式会社Rozen
             </h1>
           
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              Time Series Analysis - 中古価格時系列分析とは
+              中古価格時系列分析とは - Time Series Analysis
             </h3>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
