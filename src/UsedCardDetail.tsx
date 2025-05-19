@@ -113,10 +113,10 @@ function UsedCardDetail() {
             {price_data?.results.map(item => (
 
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{elem["price"].toLocaleString()}{"円"}</span>
+                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{item["price"].toLocaleString()}{"円"}</span>
                   {" "}
-                  <a target="_blank" href={elem['url']} className="-m-1.5 p-1.5 text-cyan-800">
-                    {elem['title']}
+                  <a target="_blank" href={item['url']} className="-m-1.5 p-1.5 text-cyan-800">
+                    {item['title']}
                   </a>
                 </p>
 
