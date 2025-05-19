@@ -111,7 +111,7 @@ function UsedCard() {
       <div className="relative isolate px-6 mt-12 lg:mx-8 bg-zinc-100 ">
         <div className="mx-auto max-w-2xl pt-12 sm:pt-12 lg:pt-18">
           <div className="w-full place-items-center">
-            <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover_query.jpg" alt="Lapis I prototype image" />
+            <img className="object-cover object-center w-full rounded-lg" src="/img_top_cover_used.jpg" alt="Lapis I prototype image" />
           </div>
           
           <div className="text-center">
