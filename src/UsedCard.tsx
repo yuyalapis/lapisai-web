@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react'
 
 function UsedCard() {
   const [price_data, set_price_data] = useState({
-  "result_up":{"after": [
+  "result_up":[{"after": [
         {
           "saved_at": "2025-05-10",
           "price": 1500,
@@ -35,8 +35,8 @@ function UsedCard() {
           "category": "カード買取情報ロード中"
         }
       ]
-    },
-  "result_down":{"after": [
+    }],
+  "result_down":[{"after": [
         {
           "saved_at": "2025-05-10",
           "price": 1500,
@@ -64,7 +64,7 @@ function UsedCard() {
           "category": "カード買取情報ロード中"
         }
       ]
-    },
+    }],
     "results":[
       {
         "saved_at": "2025-05-10",
