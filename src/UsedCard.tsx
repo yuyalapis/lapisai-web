@@ -5,28 +5,56 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 import { useState, useEffect } from 'react'
 
 
-function Query() {
-  const [is_use_effect_called, set_called] = useState(0)
-  const [score_data, set_score_data] = useState({
-    "results":[
+function UsedCard() {
+  const [price_data, set_price_data] = useState({
+  "result_up":[
       {
-        "app_authority_score":4.0,
-        "score":15,
-        "title": "App authority score",
-        "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
+        "saved_at": "2025-05-10",
+        "price": 1500,
+        "title": "loading...",
+        "category": "loading..."
       },
       {
-        "app_authority_score":4.0,
-        "score":15,"title":"アプリ信頼性スコア",
-        "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
+        "saved_at": "2025-05-10",
+        "price": 1000,
+        "title": "カード買取情報ロード中",
+        "category": "カード買取情報ロード中"
+      }
+    ],
+  "result_down":[
+      {
+        "saved_at": "2025-05-10",
+        "price": 1500,
+        "title": "loading...",
+        "category": "loading..."
+      },
+      {
+        "saved_at": "2025-05-10",
+        "price": 1000,
+        "title": "カード買取情報ロード中",
+        "category": "カード買取情報ロード中"
+      }
+    ],
+    "results":[
+      {
+        "saved_at": "2025-05-10",
+        "price": 1500,
+        "title": "loading...",
+        "category": "loading..."
+      },
+      {
+        "saved_at": "2025-05-10",
+        "price": 1000,
+        "title": "カード買取情報ロード中",
+        "category": "カード買取情報ロード中"
       }
     ]
   })
 
   useEffect(() => {
-    document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
-    const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score"
-    fetch(url_app_authority_score).then(
+    document.title = "カード買取中古価格分析ツール developed by Lapis AI by 株式会社Rozen"
+    const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card"
+    fetch(url_used_price).then(
       (response) => {
         console.log(response)
         return response.json()
@@ -34,7 +62,7 @@ function Query() {
     ).then(
       (json_response) => {
         console.log(json_response)
-        set_score_data(json_response)
+        set_price_data(json_response)
       }
     )
   }, [])
@@ -64,7 +92,7 @@ function Query() {
                 target="_blank"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                アプリ分析
+                カード買取中古価格分析
               </a>
           </div>
         </nav>
@@ -78,84 +106,98 @@ function Query() {
           
           <div className="text-center">
             <h1 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
-              App authority score - アプリ信頼性スコア分析ツール<br />
+              時系列分析 - カード買取中古価格分析ツール<br />
               Query - developed by Lapis AI by 株式会社Rozen
             </h1>
           
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              App authority score - アプリ信頼性スコアとは
+              Time Series Analysis - 中古価格時系列分析とは
             </h3>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              App authority score (アプリ信頼性スコア) とは、ストアからどれだけおすすめされたかを表す指標です。<br />
-              アプリがおすすめする他のアプリの数は限られているので、webのバックリンクに似た仕組みでアプリの信頼性を計ることができます。<br />
-              性質のよい空間で考えることになるので、データ数にたいしてロバスト、つまりあまり変化しないなど、指標として安定しているわけです。<br />
-              0.0 から最大で 4.0 をとります。
+              Time Series Analysis of Used Price (中古価格時系列分析) とは、中古価格の推移を表す分析です。<br />
+              通常、中古価格は下落し0円になりますが、希少なアイテムでは中古価格が0円にならず、安定する現象が起きます。<br />
+              これらのアイテムの特徴を見極めることで、長期的に価値がある商品を発掘したり、自身でプロダクトをつくる際に長期的に価値が出るように設計・構築したりできるようになります。
               
             </p>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              App Authority Score Realtime Ranking <br /> アプリオーソリティースコア リアルタイムランキング
+              価格が上がったカード - カード中古買取価格 上昇リアルタイムランキング
             </h3>
-              {score_data?.results.map(item => (
+              {price_data?.result_up.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-                  {item['app_authority_score'] >= 3.0　&&
-                    <span className="px-3 py-1 bg-indigo-500 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1) }</span>
-                  }
-                  {(item['app_authority_score'] >= 2.0 && item['app_authority_score'] < 3.0) &&
-                    <span className="px-3 py-1 bg-indigo-300 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1)}</span>
-                  }
-                  {item['app_authority_score'] < 2.0 &&
-                    <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1) }</span>
-                  }
+                  <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{"+"}{(item["after"]["price"] - item['before']["price"]).toLocaleString()}{"円"}</span>
                   {" "}
-                  <a target="_blank" href={item['url_to']} className="-m-1.5 p-1.5 text-cyan-800">
+                  {item["after"]["price"]}
+                  {" "}
+                  <a target="_blank" href={item["after"]['url']} className="-m-1.5 p-1.5 text-cyan-800">
+                    {item["after"]['title']}
+                  </a>
+                </p>
+              ))}
+
+            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+              価格が下がったカード - カード中古買取価格 下落リアルタイムランキング
+            </h3>
+              {price_data?.result_down.map(item => (
+                <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+                  <span className="px-3 py-1 bg-yellow-500 text-white rounded-full text-xs" >{"-"}{(item["before"]["price"] - item['after']["price"]).toLocaleString()}{"円"}</span>
+                  {" "}
+                  {item["after"]["price"]}
+                  {" "}
+                  <a target="_blank" href={item["after"]['url']} className="-m-1.5 p-1.5 text-cyan-800">
+                    {item["after"]['title']}
+                  </a>
+                </p>
+              ))}
+
+            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+              価格の高いカード - カード中古買取価格 リアルタイムランキング
+            </h3>
+              {price_data?.results.map(item => (
+                <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+                  <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{item['price'].toLocaleString()}{"円"}</span>
+                  {" "}
+                  {item["price"]}
+                  {" "}
+                  <a target="_blank" href={item['url']} className="-m-1.5 p-1.5 text-cyan-800">
                     {item['title']}
                   </a>
                 </p>
               ))}
-            
+
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              アプリの信頼性の3分類
+              アイテム別中古価格推移の3分類
             </h3>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              アプリの信頼性を表すスコアは次の3つに分類できます。
-              <br />1. そもそも動くのかどうか、functional なレベル
-              <br />2. 機能はちゃんとつくられているのかどうか
-              <br />3. アニメーションなどの細部にわたるデザイン
+              中古価格の時系列で見た時の数いの仕方は次の3つのパターンに分類できます。
+              <br />1. 時間とともに価格が下落していき、いずれ0円になる
+              <br />2. ある程度のところで価格の下落が止まり、一定の価格で取引されるようになる
+              <br />3. 時間とともに価値が上がっていき、価格が上昇する
               
             </p>
 
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              このうち、1. そもそも動くのかどうかについてが信頼性という言葉から定義しようとする際、主眼になるかと思います。
-              <br />アプリがクラッシュしているかどうかは、App Developer Console から見れるのですが、筆者がゲームを作った際もクラッシュ率が0.0%でしたので、
-              クラッシュしないアプリをつくるtipsを2点ほど共有させていただきたいと思います。
+              この3つのパターンのうち、1. 時間とともに価格が下落していき、いずれ0円になるというパターンが大半で、実際流通しているカードのうち、値段がつくカードを調べたところ、わずか24%のカードのみ値段がつくという結果になりました。
+              <br />流通されて名前が通っているアイテムに絞ってもこのパーセンテージの少なさとなっており、
+              基本的にほとんどのアイテムは、時間とともに価値が減少し、価格は0円になるということが示されているかと思います。
             </p>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              1. 軽いフレームワークを使う技術選定をする。特にゲームエンジンを搭載しているフレームワークなどはよく落ちます。
-              そもそもデフォルトで重いので、fpsを出すのに苦労します。ゲーム機器とは違って、
-              高スペックなスマートフォンの人もいれば、骨董品レベルのものを未だに使い続けている人もいるわけです。
-              <br />最近はiOSのバージョンが古い人、つまり昔のiPhoneを使い続けているためアップデートできない人は、インストールがそもそもできないようになっています。
-              <br />クラッシュしないためにCPUを積んだ最新機種のみ対応という流れは、それでいいのかという気がします。
-              <br />例えばゲームエンジンを使わなくとも簡単なゲームはsprite機能を実装することでつくれますし、軽いフレームワークの選定というのは割と重要な気がしています。
+              それに対して、2. ある程度のところで価格の下落が止まり、一定の価格で取引されるようになる や 3. 時間とともに価値が上がっていき、価格が上昇する アイテムは、それ自体に価値があることが多いです。
+              例えば価格上位にきているアイテムに浮世絵をあしらったものがあります。
+              絵自体に価値があったり、文章で言えば技術書であったり、そういったアイテムは価値が0になることなく少なくとも一定の価格を維持するというパターンが見られます。
             </p>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              2. 不要なモジュールやプラグインがたまっていて重くなっている。
-              <br />このパターンは開発全般であるあるかと思います。
-              アプリの場合はモジュールを読み込みすぎると、相性の問題でビルドが通らなかったり、クラッシュしたりします。
-              いわゆるリファクタを定期的にして、不要なモジュールを削除する必要があります。
-              
-            </p>
-
-            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-
-              相性の問題でクラッシュする問題の解決策として言われていたのは、そもそも import を慎重にやる。一つづつしかモジュールは追加しないという戦略でした。
-              <br />リファクタと言われても工数は現実的に取れなかったりするので、最初から一つづつ import して相性の問題が起きたらすぐに revert できるようにするのがよいのかなと思います。
+              3. 時間とともに価値が上がっていき、価格が上昇する アイテムを多くの人が求めていると思います。
+              <br />実際、アンティークのティーカップや書籍などのいわゆる価値が上がりそうなアイテムであっても、買った時の価格を上回る値がつくというのは非常に稀です。
+              やはり経年変化により価格は下落するという方向にどうしてもなりがちです。
+              この時間とともに価値が上昇するというある意味ロマンを追いかけるならば、おそらく経年変化をほぼ感じさせないようなもの、
+              例えば希少なガジェット（電子機器類）やカードになるのかもしれません。
               
             </p>
             
@@ -163,9 +205,8 @@ function Query() {
               <p className="mt-8 text-pretty text-base font-semibold text-gray-700 sm:text-lg/8">
               
                 [今日の開発日記] <br />
-                2025-05-03: プロジェクト始動 - さぶや<br /><br />
-                2025-05-05: サイトをとりあえず動くようにしました。<br />各アプリの信頼性スコアがランキング形式で一覧できるようになっています。- さぶや<br />
-                2025-05-10: コラムを追加しました。
+                2025-05-18: プロジェクト始動 - さぶや<br /><br />
+                2025-05-19: サイトをとりあえず動くようにしました。<br />最近価格が上がったり下がったりしたカードがランキング形式で一覧できるようになっています。- さぶや<br />
                 <br />
               </p>
             </div>
@@ -182,7 +223,7 @@ function Query() {
 
             <div className="py-1 flex items-center justify-center gap-x-6">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                更新日: 2025/05/05
+                更新日: 2025/05/19
               </a>
             </div>
           </div>
@@ -193,4 +234,4 @@ function Query() {
   );
 }
 
-export default Query;
+export default UsedCard;
