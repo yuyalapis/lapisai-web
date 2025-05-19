@@ -10,6 +10,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Home from "./Home"
 import Query from "./Query"
 import Detail from "./Detail"
+import UsedCard from "./UsedCard"
 import Siteref from "./Siteref"
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/query" element={<Query />} />
           <Route path="/app/:appname" element={<Detail />} />
+          <Route path="/query-used-price-card" element={<UsedCard />} />
           <Route path="/siteref" element={<Siteref />} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
