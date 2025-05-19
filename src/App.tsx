@@ -25,7 +25,7 @@ function App() {
           <Route path="/query" element={<Query />} />
           <Route path="/app/:appname" element={<Detail />} />
           <Route path="/query-used-price-card" element={<UsedCard />} />
-          <Route path="/query-used-price-card-detail" element={<UsedCardDetail />} />
+          <Route path="/query-used-price-card-detail/:cardname" element={<UsedCardDetail />} />
           <Route path="/siteref" element={<Siteref />} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
