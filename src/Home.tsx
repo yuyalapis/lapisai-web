@@ -36,11 +36,11 @@ function App() {
 
           <div className="flex flex-1 justify-center ml-auto">
             <a
-                href="https://lapisai.com/query"
+                href="https://lapisai.com/query-used-price-card"
                 target="_blank"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                アプリ分析
+                中古価格分析
               </a>
           </div>
         </nav>
@@ -59,11 +59,25 @@ function App() {
               Produced by Lapis AI<br />
               By 株式会社Rozen
             </h1>
+
             <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              アプリ分析ツールつくっています<br />
-              アップストアからアプリがどれくらいおすすめされているかを分析できます<br />
-              
-              
+              中古価格分析ツールつくっています<br />
+              価格の推移を分析できます<br />
+
+            </p>
+            <div className="mt-4 flex items-center justify-center gap-x-6">
+              <a
+                href="https://lapisai.com/query-used-price-card"
+                target="_blank"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Query - 中古価格推移分析ツール
+              </a>
+            </div>
+            
+            <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+              アプリ分析ツールでは、アップストアからアプリがどれくらいおすすめされているかを分析できます<br />
+
             </p>
             <div className="mt-4 flex items-center justify-center gap-x-6">
               <a
