@@ -1,4 +1,5 @@
 import React from 'react';
+import {useParams} from "react-router-dom"
 import './App.css';
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
@@ -6,6 +7,7 @@ import { useState, useEffect } from 'react'
 
 
 function UsedCardDetail() {
+  const {appname} = useParams()
   const [price_data, set_price_data] = useState({
     "detail":{
       "saved_at": "2025-05-10",
