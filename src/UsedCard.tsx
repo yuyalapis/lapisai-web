@@ -139,7 +139,8 @@ function UsedCard() {
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{"+"}{(item["after"]["price"] - item['before']["price"]).toLocaleString()}{"円"}</span>
                   {" "}
-                  {item["after"]["price"]}
+                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(item["after"]["price"]).toLocaleString()}{"円"}</span>
+                  
                   {" "}
                   <a target="_blank" href={item["after"]['url']} className="-m-1.5 p-1.5 text-cyan-800">
                     {item["after"]['title']}
@@ -154,7 +155,7 @@ function UsedCard() {
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   <span className="px-3 py-1 bg-yellow-500 text-white rounded-full text-xs" >{"-"}{(item["before"]["price"] - item['after']["price"]).toLocaleString()}{"円"}</span>
                   {" "}
-                  {item["after"]["price"]}
+                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(item["after"]["price"]).toLocaleString()}{"円"}</span>
                   {" "}
                   <a target="_blank" href={item["after"]['url']} className="-m-1.5 p-1.5 text-cyan-800">
                     {item["after"]['title']}
@@ -167,9 +168,8 @@ function UsedCard() {
             </h3>
               {price_data?.results.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-                  <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs" >{item['price'].toLocaleString()}{"円"}</span>
-                  {" "}
-                  {item["price"]}
+                  <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{item['price'].toLocaleString()}{"円"}</span>
+                  
                   {" "}
                   <a target="_blank" href={item['url']} className="-m-1.5 p-1.5 text-cyan-800">
                     {item['title']}
