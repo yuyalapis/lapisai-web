@@ -13,13 +13,15 @@ function UsedCard() {
           "saved_at": "2025-05-10",
           "price": 1500,
           "title": "loading...",
-          "category": "loading..."
+          "category": "loading...",
+          "url": "https://lapisai.com"
         },
       "before": {
           "saved_at": "2025-05-10",
           "price": 1500,
           "title": "loading...",
-          "category": "loading..."
+          "category": "loading...",
+          "url": "https://lapisai.com"
         }
       }
     ],
@@ -29,13 +31,15 @@ function UsedCard() {
           "saved_at": "2025-05-10",
           "price": 1500,
           "title": "loading...",
-          "category": "loading..."
+          "category": "loading...",
+          "url": "https://lapisai.com"
         },
       "before": {
           "saved_at": "2025-05-10",
           "price": 1500,
           "title": "loading...",
-          "category": "loading..."
+          "category": "loading...",
+          "url": "https://lapisai.com"
         }
       }
     ],
@@ -44,13 +48,15 @@ function UsedCard() {
         "saved_at": "2025-05-10",
         "price": 1500,
         "title": "loading...",
-        "category": "loading..."
+        "category": "loading...",
+        "url": "https://lapisai.com"
       },
       {
         "saved_at": "2025-05-10",
         "price": 1000,
         "title": "カード買取情報ロード中",
-        "category": "カード買取情報ロード中"
+        "category": "カード買取情報ロード中",
+        "url": "https://lapisai.com"
       }
     ]
   })
