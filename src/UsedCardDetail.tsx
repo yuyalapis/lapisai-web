@@ -28,8 +28,8 @@ function UsedCardDetail() {
   })
 
   useEffect(() => {
-    document.title = "カード買取中古価格分析ツール developed by Lapis AI by 株式会社Rozen"
-    const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card"
+    document.title = cardname + " カード買取中古価格推移分析ツール - Lapis AI"
+    const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname
     fetch(url_used_price).then(
       (response) => {
         console.log(response)
