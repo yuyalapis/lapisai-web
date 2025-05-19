@@ -14,17 +14,15 @@ function UsedCardDetail() {
       "category": "loading...",
       "region": "card"
     },
+    "keywords": "keyword",
     "results":[
       {
-        "key": "keyword",
-        "keyword": [{
-          "saved_at": "2025-05-10",
-          "price": 1500,
-          "title": "loading...",
-          "category": "loading...",
-          "url": "https://lapisai.com",
-          "region": "card"
-        }]
+        "saved_at": "2025-05-10",
+        "price": 1500,
+        "title": "loading...",
+        "category": "loading...",
+        "url": "https://lapisai.com",
+        "region": "card"
       }
     ]
   })
@@ -109,12 +107,11 @@ function UsedCardDetail() {
                   {price_data?.detail['title']}
                 </p>
 
+            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+              関連するカード - カード中古買取価格 {price_data?.keywords}
+            </h3>
             {price_data?.results.map(item => (
-            <div>
-              <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-                関連するカード - カード中古買取価格 {item["key"]}
-              </h3>
-              {keyword = item["key"], item[keyword].map(elem => (
+
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{elem["price"].toLocaleString()}{"円"}</span>
                   {" "}
@@ -122,8 +119,7 @@ function UsedCardDetail() {
                     {elem['title']}
                   </a>
                 </p>
-              ))}
-            </div>
+
             ))}
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
