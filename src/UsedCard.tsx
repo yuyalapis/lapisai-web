@@ -7,34 +7,64 @@ import { useState, useEffect } from 'react'
 
 function UsedCard() {
   const [price_data, set_price_data] = useState({
-  "result_up":[
-      {
-        "saved_at": "2025-05-10",
-        "price": 1500,
-        "title": "loading...",
-        "category": "loading..."
-      },
-      {
-        "saved_at": "2025-05-10",
-        "price": 1000,
-        "title": "カード買取情報ロード中",
-        "category": "カード買取情報ロード中"
-      }
-    ],
-  "result_down":[
-      {
-        "saved_at": "2025-05-10",
-        "price": 1500,
-        "title": "loading...",
-        "category": "loading..."
-      },
-      {
-        "saved_at": "2025-05-10",
-        "price": 1000,
-        "title": "カード買取情報ロード中",
-        "category": "カード買取情報ロード中"
-      }
-    ],
+  "result_up":{"after": [
+        {
+          "saved_at": "2025-05-10",
+          "price": 1500,
+          "title": "loading...",
+          "category": "loading..."
+        },
+        {
+          "saved_at": "2025-05-10",
+          "price": 1000,
+          "title": "カード買取情報ロード中",
+          "category": "カード買取情報ロード中"
+        }
+      ],
+      "before": [
+        {
+          "saved_at": "2025-05-10",
+          "price": 1500,
+          "title": "loading...",
+          "category": "loading..."
+        },
+        {
+          "saved_at": "2025-05-10",
+          "price": 1000,
+          "title": "カード買取情報ロード中",
+          "category": "カード買取情報ロード中"
+        }
+      ]
+    },
+  "result_down":{"after": [
+        {
+          "saved_at": "2025-05-10",
+          "price": 1500,
+          "title": "loading...",
+          "category": "loading..."
+        },
+        {
+          "saved_at": "2025-05-10",
+          "price": 1000,
+          "title": "カード買取情報ロード中",
+          "category": "カード買取情報ロード中"
+        }
+      ],
+      "before": [
+        {
+          "saved_at": "2025-05-10",
+          "price": 1500,
+          "title": "loading...",
+          "category": "loading..."
+        },
+        {
+          "saved_at": "2025-05-10",
+          "price": 1000,
+          "title": "カード買取情報ロード中",
+          "category": "カード買取情報ロード中"
+        }
+      ]
+    },
     "results":[
       {
         "saved_at": "2025-05-10",
