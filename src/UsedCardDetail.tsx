@@ -140,7 +140,7 @@ function UsedCardDetail() {
                   {price_data?.detail['title']}
                 </p>
 
-            <div className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg" style={divStyle}>
+{/*             <div className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg" style={divStyle}>
               <Line
                 height={300}
                 width={300}
@@ -148,7 +148,7 @@ function UsedCardDetail() {
                 options={options}
                 id="chart-key"
               />
-            </div>
+            </div> */}
             
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               関連するカード - カード中古買取価格 {price_data?.keywords}
