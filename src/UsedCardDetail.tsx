@@ -64,6 +64,18 @@ function UsedCardDetail() {
       }
     )
 
+    const url_used_price_line_chart = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart?cardname=" + cardname
+    fetch(url_used_price_line_chart).then(
+      (response) => {
+        console.log(response)
+        return response.json()
+      }
+    ).then(
+      (json_response) => {
+        console.log(json_response)
+        set_series_data(json_response)
+      }
+    )
     
     const graphData = {
       labels: series_data.labels,
