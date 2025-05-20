@@ -37,7 +37,7 @@ function UsedCardDetail() {
     labels: series_data.labels,
     datasets: [
       {
-        label: cardname+" 中古価格推移",
+        label: "中古価格推移",
         data: series_data.data,
         borderColor: "rgb(75, 192, 192)",
       }
