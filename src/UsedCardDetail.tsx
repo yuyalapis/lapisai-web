@@ -5,6 +5,8 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 import { useState, useEffect } from 'react'
 
+import { Line } from "react-chartjs-2"
+
 
 function UsedCardDetail() {
   const {cardname} = useParams()
