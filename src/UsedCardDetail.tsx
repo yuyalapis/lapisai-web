@@ -90,7 +90,7 @@ function UsedCardDetail() {
           
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-               中古価格時系列分析とは - Time Series Analysis
+              {cardname} の中古価格時系列分析 - Time Series Analysis
             </h3>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
