@@ -5,10 +5,10 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 import { useState, useEffect } from 'react'
 
-import { Chart as ChartJS, registerables } from 'chart.js';
-import { Chart } from 'react-chartjs-2'
-import { Line } from "react-chartjs-2"
-ChartJS.register(...registerables)
+// import { Chart as ChartJS, registerables } from 'chart.js';
+// import { Chart } from 'react-chartjs-2'
+// import { Line } from "react-chartjs-2"
+// ChartJS.register(...registerables)
 
 function UsedCardDetail() {
   const {cardname} = useParams()
