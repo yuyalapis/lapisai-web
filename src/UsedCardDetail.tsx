@@ -31,7 +31,7 @@ function UsedCardDetail() {
     ]
   })
 
-  const [series_data, set_series_data] = useState({"data":[15000,20000,20000], "labels":["Fri, 16 May 2025 00:00:00 GMT","Mon, 19 May 2025 00:00:00 GMT","Wed, 21 May 2025 00:00:00 GMT"]})
+  const [series_data, set_series_data] = useState({"data":[15000,20000,20000], "labels":["2025-05-16","2025-05-19","2025-05-21"]})
 
   const graphData = {
     labels: series_data.labels,
