@@ -31,7 +31,12 @@ function UsedCardDetail() {
     ]
   })
 
-  const [series_data, set_series_data] = useState({"data":[15000,20000,20000], "labels":["2025-05-16","2025-05-19","2025-05-21"]})
+  const [series_data, set_series_data] = useState(
+    {
+      "data":[15000,20000,20000], 
+     "labels":["2025-05-16","2025-05-19","2025-05-21"]
+    }
+  )
 
   const options: {} = {
     maintainAspectRatio: false,
