@@ -33,17 +33,6 @@ function UsedCardDetail() {
 
   const [series_data, set_series_data] = useState({"data":[15000,20000,20000], "labels":["2025-05-16","2025-05-19","2025-05-21"]})
 
-  const graphData = {
-    labels: series_data.labels,
-    datasets: [
-      {
-        label: "中古価格推移",
-        data: series_data.data,
-        borderColor: "rgb(75, 192, 192)",
-      }
-    ],
-  };
-
   const options: {} = {
     maintainAspectRatio: false,
   };
@@ -69,6 +58,18 @@ function UsedCardDetail() {
         set_price_data(json_response)
       }
     )
+
+    
+    const graphData = {
+      labels: series_data.labels,
+      datasets: [
+        {
+          label: "中古価格推移",
+          data: series_data.data,
+          borderColor: "rgb(75, 192, 192)",
+        }
+      ],
+    }
   }, [])
 
   return (
