@@ -159,7 +159,7 @@ function UsedCardDetail() {
                   {price_data?.detail['title']}
                 </p>
 
-            <div className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg" style={divStyle}>
+            <div className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-lg" style={divStyle}>
               <Line
                 height={300}
                 width={300}
