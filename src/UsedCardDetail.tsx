@@ -29,6 +29,30 @@ function UsedCardDetail() {
     ]
   })
 
+  const [series_data, set_series_data] = useState({"data":[15000,20000,20000], "labels":["Fri, 16 May 2025 00:00:00 GMT","Mon, 19 May 2025 00:00:00 GMT","Wed, 21 May 2025 00:00:00 GMT"]})
+
+  const graphData = {
+    labels: series_data.labels,
+    datasets: [
+      {
+        label: cardname+" 中古価格推移",
+        data: series_data.data,
+        borderColor: "rgb(75, 192, 192)",
+      }
+    ],
+  };
+
+  const options: {} = {
+    maintainAspectRatio: false,
+  };
+
+  const divStyle: React.CSSProperties = {
+    marginLeft: "auto",
+    marginRight: "auto",
+    margin: "10px",
+    width: "500px",
+  };
+  
   useEffect(() => {
     document.title = cardname + " カード買取中古価格推移分析ツール - Lapis AI"
     const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname
