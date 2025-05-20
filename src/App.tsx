@@ -13,6 +13,7 @@ import Detail from "./Detail"
 import UsedCard from "./UsedCard"
 import UsedCardDetail from "./UsedCardDetail"
 import Siteref from "./Siteref"
+import SiterefUsedCard from "./SiterefUsedCard"
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/query-used-price-card" element={<UsedCard />} />
           <Route path="/query-used-price-card-detail/:cardname" element={<UsedCardDetail />} />
           <Route path="/siteref" element={<Siteref />} />
+          <Route path="/siterefusedcard" element={<SiterefUsedCard />} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
       </BrowserRouter>
