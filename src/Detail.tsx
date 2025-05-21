@@ -6,8 +6,6 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 import { useState, useEffect } from 'react'
 
-import { Line } from "react-chartjs-2";
-
 function Detail() {
   const {appname} = useParams()
   const [is_use_effect_called, set_called] = useState(0)
