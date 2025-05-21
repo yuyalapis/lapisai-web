@@ -143,7 +143,7 @@ function UsedCardDetail() {
                   {" "}
                   {price_data?.detail['title']}
                 </p>
-              <div className="items-center">
+              <div className="items-center w-full place-items-center">
                 <img src={price_data?.detail["img_src"]} className="text-center items-center " />
               </div>
             <div className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-lg items-center w-full place-items-center">
