@@ -7,7 +7,8 @@ import { useState, useEffect } from 'react'
 
 
 function UsedCardDetail() {
-  const {cardname} = useParams()
+  let {cardname, cardname_2} = useParams()
+  cardname = cardname + cardname_2
   const [price_data, set_price_data] = useState({
     "detail":{
       "saved_at": "2025-05-10",
