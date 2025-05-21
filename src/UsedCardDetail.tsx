@@ -14,7 +14,8 @@ function UsedCardDetail() {
       "price": 1500,
       "title": "loading...",
       "category": "loading...",
-      "region": "card"
+      "region": "card",
+      "img_src": "https://www.suruga-ya.jp/database/photo.php?shinaban=107006014001&size=ss"
     },
     "keywords": "keyword",
     "results":[
