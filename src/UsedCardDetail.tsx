@@ -5,6 +5,8 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 import { useState, useEffect } from 'react'
 
+import car_0 from "./assets/images/cat_0.png"
+
 
 function UsedCardDetail() {
   let {cardname, cardname_2} = useParams()
@@ -93,13 +95,7 @@ function UsedCardDetail() {
           </div>
 
           <div className="flex flex-1 justify-center ml-auto">
-            <a
-                href="https://lapisai.com/query-used-price-card"
-                target="_blank"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                カード買取中古価格分析
-              </a>
+            <img src={car_0} />
           </div>
         </nav>
       </header>
