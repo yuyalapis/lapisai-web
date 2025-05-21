@@ -139,7 +139,7 @@ function UsedCardDetail() {
             </h3>
               <div className="flex items-center">
                 <img src={price_data?.detail["img_src"]} />
-                <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+                <p className="mt-2 ml-4 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   {" "}
                   <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(price_data?.detail["price"]).toLocaleString()}{"円"}</span>
                   {" "}
