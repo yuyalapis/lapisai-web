@@ -35,7 +35,11 @@ function UsedCardDetail() {
   useEffect(() => {
     document.title = cardname + " カード買取中古価格推移分析ツール - Lapis AI"
 
-    const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname + "/" + cardname_2
+    if (cardname_2) {
+      const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname + "/" + cardname_2
+    } else {
+      const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname
+    }
     fetch(url_used_price).then(
       (response) => {
         console.log(response)
@@ -47,8 +51,11 @@ function UsedCardDetail() {
         set_price_data(json_response)
       }
     )
-
-    const url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname + "/" + cardname_2
+    if (cardname_2) {
+      const url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname + "/" + cardname_2
+    } else {
+      const url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname
+    }
     fetch(url_used_price_img).then(
       (response) => {
         console.log(response)
