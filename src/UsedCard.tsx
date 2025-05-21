@@ -221,6 +221,7 @@ function UsedCard() {
                 [今日の開発日記] <br />
                 2025-05-18: プロジェクト始動 - さぶや<br /><br />
                 2025-05-19: サイトをとりあえず動くようにしました。<br />最近価格が上がったり下がったりしたカードがランキング形式で一覧できるようになっています。- さぶや<br />
+                2025-05-21: アクセスが来すぎたためDBのData Transfer に課金せざるを得なくなりました - さぶや<br /><br />
                 <br />
               </p>
             </div>
@@ -237,7 +238,7 @@ function UsedCard() {
 
             <div className="py-1 flex items-center justify-center gap-x-6">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                更新日: 2025/05/19
+                更新日: 2025/05/21
               </a>
             </div>
           </div>
