@@ -8,7 +8,6 @@ import { useState, useEffect } from 'react'
 
 function UsedCardDetail() {
   let {cardname, cardname_2} = useParams()
-  cardname = cardname + cardname_2
   const [price_data, set_price_data] = useState({
     "detail":{
       "saved_at": "2025-05-10",
@@ -36,7 +35,7 @@ function UsedCardDetail() {
   useEffect(() => {
     document.title = cardname + " カード買取中古価格推移分析ツール - Lapis AI"
 
-    const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname
+    const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname + "/" + cardname_2
     fetch(url_used_price).then(
       (response) => {
         console.log(response)
@@ -49,7 +48,7 @@ function UsedCardDetail() {
       }
     )
 
-    const url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname
+    const url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname + "/" + cardname_2
     fetch(url_used_price_img).then(
       (response) => {
         console.log(response)
@@ -102,7 +101,7 @@ function UsedCardDetail() {
           
           <div className="text-center">
             <h1 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
-              {cardname} カード買取中古価格分析ツール<br />
+              {cardname + "/" + cardname_2} カード買取中古価格分析ツール<br />
               Query - 時系列分析 developed by Lapis AI by 株式会社Rozen
             </h1>
           
