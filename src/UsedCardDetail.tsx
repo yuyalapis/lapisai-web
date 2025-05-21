@@ -142,7 +142,7 @@ function UsedCardDetail() {
                   {price_data?.detail['title']}
                 </p>
 
-            <div className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
+            <div className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-lg items-center">
               <img src={"data:imgage/png;base64,"+data_base64["data_src"]} />
             </div>
 
