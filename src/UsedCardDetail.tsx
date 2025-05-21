@@ -108,7 +108,7 @@ function UsedCardDetail() {
           
           <div className="text-center">
             <h1 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
-              {cardname + "/" + cardname_2} カード買取中古価格分析ツール<br />
+              {cardname + "/"} {cardname_2 && cardname_2} カード買取中古価格分析ツール<br />
               Query - 時系列分析 developed by Lapis AI by 株式会社Rozen
             </h1>
           
