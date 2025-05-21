@@ -133,7 +133,7 @@ function UsedCardDetail() {
               カード中古買取価格
             </h3>
 
-                <p className="mt-2 ml-4 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+                <p className="mt-2 my-4 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   {" "}
                   <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(price_data?.detail["price"]).toLocaleString()}{"円"}</span>
                   {" "}
