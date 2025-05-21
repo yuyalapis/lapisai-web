@@ -35,10 +35,11 @@ function UsedCardDetail() {
   useEffect(() => {
     document.title = cardname + " カード買取中古価格推移分析ツール - Lapis AI"
 
+    let url_used_price = ""
     if (cardname_2) {
-      const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname + "/" + cardname_2
+      url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname + "/" + cardname_2
     } else {
-      const url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname
+      url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname
     }
     fetch(url_used_price).then(
       (response) => {
@@ -51,10 +52,12 @@ function UsedCardDetail() {
         set_price_data(json_response)
       }
     )
+
+    let url_used_price_img = ""
     if (cardname_2) {
-      const url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname + "/" + cardname_2
+      url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname + "/" + cardname_2
     } else {
-      const url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname
+      url_used_price_img = "https://query-backend-used.vercel.app/query-used-price-card-detail-line-chart-img?cardname=" + cardname
     }
     fetch(url_used_price_img).then(
       (response) => {
