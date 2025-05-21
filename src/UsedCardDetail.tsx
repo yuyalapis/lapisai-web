@@ -6,6 +6,7 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 import { useState, useEffect } from 'react'
 
 import cat_0 from "./images/cat_0.png"
+import cat_7_flash from "./images/cat_7_flash.png"
 
 function UsedCardDetail() {
   let {cardname, cardname_2} = useParams()
@@ -94,7 +95,7 @@ function UsedCardDetail() {
           </div>
 
           <div className="flex flex-1 justify-center ml-auto">
-            <img src={cat_0} className="w-20"/>
+            <img src={cat_0} className="w-20" id="cat" />
           </div>
         </nav>
       </header>
