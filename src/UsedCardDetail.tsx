@@ -133,7 +133,7 @@ function UsedCardDetail() {
                 </p>
 
             <div className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              <img src={"data:imgage/jpg;base64,"+data_base64}>
+              <img src={"data:imgage/jpg;base64,"+data_base64} />
             </div>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
