@@ -95,7 +95,7 @@ function UsedCardDetail() {
           </div>
 
           <div className="flex flex-1 justify-center ml-auto">
-            <img src={car_0} />
+            <img src={cat_0} />
           </div>
         </nav>
       </header>
