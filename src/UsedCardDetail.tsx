@@ -11,6 +11,8 @@ import cat_7_flash from "./images/cat_7_flash.png"
 function UsedCardDetail() {
   let {cardname, cardname_2} = useParams()
   const [cat_state, set_cat_state] = useState(cat_0)
+  const url_cat_clicked = "https://query-backend-used.vercel.app/stats/cat?region=card"
+  
   const [price_data, set_price_data] = useState({
     "detail":{
       "saved_at": "2025-05-10",
@@ -96,7 +98,7 @@ function UsedCardDetail() {
           </div>
 
           <div className="flex flex-1 justify-center ml-auto">
-            <img src={cat_state} className="w-20" id="cat" onClick={() => {set_cat_state(cat_7_flash); setTimeout(() => {set_cat_state(cat_0)}, 1500)}} />
+            <img src={cat_state} className="w-20" id="cat" onClick={() => {set_cat_state(cat_7_flash); fetch(url_cat_clicked).then((response) => {console.log(response)}); setTimeout(() => {set_cat_state(cat_0)}, 1500)}} />
           </div>
         </nav>
       </header>
