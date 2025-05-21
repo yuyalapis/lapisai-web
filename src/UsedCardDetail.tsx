@@ -132,15 +132,15 @@ function UsedCardDetail() {
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               カード中古買取価格
             </h3>
-              <div className="flex items-center">
+              <div className="items-center">
                 <img src={price_data?.detail["img_src"]} />
+              </div>
                 <p className="mt-2 ml-4 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   {" "}
                   <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(price_data?.detail["price"]).toLocaleString()}{"円"}</span>
                   {" "}
                   {price_data?.detail['title']}
                 </p>
-              </div>
 
             <div className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               <img src={"data:imgage/png;base64,"+data_base64["data_src"]} />
