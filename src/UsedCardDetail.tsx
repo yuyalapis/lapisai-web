@@ -5,9 +5,6 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 import { useState, useEffect } from 'react'
 
-import cat_0 from "../images/cat_0.png"
-
-
 function UsedCardDetail() {
   let {cardname, cardname_2} = useParams()
   const [price_data, set_price_data] = useState({
@@ -95,7 +92,7 @@ function UsedCardDetail() {
           </div>
 
           <div className="flex flex-1 justify-center ml-auto">
-            <img src={cat_0} />
+            <img src="/cat_0.png" />
           </div>
         </nav>
       </header>
