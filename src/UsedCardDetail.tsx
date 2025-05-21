@@ -20,7 +20,7 @@ function UsedCardDetail() {
       "title": "loading...",
       "category": "loading...",
       "region": "card",
-      "img_src": "https://www.suruga-ya.jp/database/photo.php?shinaban=107006014001&size=ss"
+      "img_src": "https://www.suruga-ya.jp/database/photo.php?shinaban=107006014001&size=m"
     },
     "keywords": "keyword",
     "results":[
