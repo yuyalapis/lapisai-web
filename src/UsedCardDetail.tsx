@@ -96,7 +96,7 @@ function UsedCardDetail() {
           </div>
 
           <div className="flex flex-1 justify-center ml-auto">
-            <img src={cat_state} className="w-20" id="cat" onClick={() => {set_cat_state(cat_7_flash); setTimeour(() => {set_cat_state(cat_0)}, 1500)}} />
+            <img src={cat_state} className="w-20" id="cat" onClick={() => {set_cat_state(cat_7_flash); setTimeout(() => {set_cat_state(cat_0)}, 1500)}} />
           </div>
         </nav>
       </header>
