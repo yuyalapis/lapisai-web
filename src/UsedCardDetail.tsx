@@ -10,6 +10,7 @@ import cat_7_flash from "./images/cat_7_flash.png"
 
 function UsedCardDetail() {
   let {cardname, cardname_2} = useParams()
+  const [cat_state, set_cat_state] = useState(cat_0)
   const [price_data, set_price_data] = useState({
     "detail":{
       "saved_at": "2025-05-10",
@@ -95,7 +96,7 @@ function UsedCardDetail() {
           </div>
 
           <div className="flex flex-1 justify-center ml-auto">
-            <img src={cat_0} className="w-20" id="cat" />
+            <img src={cat_state} className="w-20" id="cat" onClick={() => {set_cat_state(cat_7_flash)}} />
           </div>
         </nav>
       </header>
