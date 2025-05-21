@@ -5,7 +5,7 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 import { useState, useEffect } from 'react'
 
-import car_0 from "./assets/images/cat_0.png"
+import car_0 from "./images/cat_0.png"
 
 
 function UsedCardDetail() {
