@@ -20,7 +20,8 @@ function UsedCardDetail() {
       "title": "loading...",
       "category": "loading...",
       "region": "card",
-      "img_src": "https://www.suruga-ya.jp/database/photo.php?shinaban=107006014001&size=ss"
+      "img_src": "https://www.suruga-ya.jp/database/photo.php?shinaban=107006014001&size=ss",
+      "img_base64": "TEST"
     },
     "keywords": "keyword",
     "results":[
@@ -138,7 +139,7 @@ function UsedCardDetail() {
             </h3>
             
               <div className="flex">
-                <img src={price_data?.detail["img_src"]} className="text-center items-center " />
+                <img src={"data:imgage/png;base64,"+price_data?.detail["img_base64"]} className="text-center items-center " />
                 <p className="mt-2 ml-4 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   {" "}
                   <span className="px-3 py-1 bg-emerald-800 text-white rounded-full text-xs" >{(price_data?.detail["price"]).toLocaleString()}{"円"}</span>
