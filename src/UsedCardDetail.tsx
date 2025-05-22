@@ -152,6 +152,9 @@ function UsedCardDetail() {
               <img src={"data:imgage/png;base64,"+data_base64["data_src"]} className="object-cover object-center w-full rounded-lg" />
             </div>
 
+            <div className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-lg items-center w-full place-items-center">
+              <img src={price_data?.detail["img_base64"]} className="object-cover object-center w-full rounded-lg" />
+            </div>
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               関連するカード - カード中古買取価格 {price_data?.keywords}
             </h3>
