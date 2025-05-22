@@ -128,12 +128,6 @@ function UsedCardDetail() {
               
             </p>
 
-            <p className="mt-2 text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-            <a 
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=5095&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fman%2Fkaitori%2Fkaitoritop.html" rel="nofollow">【駿河屋】最新作から昔懐かしのアイテムまでなんでも買い取ります！</a>
-            </p>
-
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               カード中古買取価格
             </h3>
@@ -155,6 +149,13 @@ function UsedCardDetail() {
             <div className="mt-8 text-pretty text-xl font-semibold text-gray-900 sm:text-lg items-center w-full place-items-center">
               <img src={price_data?.detail["img_base64"]} className="object-cover object-center w-full rounded-lg" />
             </div>
+
+            <p className="mt-2 text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+            <a 
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=5095&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fman%2Fkaitori%2Fkaitoritop.html" rel="nofollow">【駿河屋】最新作から昔懐かしのアイテムまでなんでも買い取ります！</a>
+            </p>
+            
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               関連するカード - カード中古買取価格 {price_data?.keywords}
             </h3>
