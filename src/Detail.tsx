@@ -105,6 +105,15 @@ function Detail() {
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
                App Store によると、こちらのアプリからオススメされました
             </h3>
+
+            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+
+              こちらのデータはユーザーの行動分析の可視化のなかでも、タッチポイント分析にあたります。<br />
+              関連するどのアプリからユーザーが流入しているかというタッチポイントが一覧できます。<br />
+              数値は 0.0 から最大で 4.0 をとり、毎日変動します。
+              
+            </p>
+            
               {score_data?.results.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   {item['app_authority_score'] >= 3.0　&&
