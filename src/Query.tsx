@@ -84,11 +84,11 @@ function Query() {
           
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              App authority score - アプリ信頼性スコアとは
+              A2 Score - App authority score - アプリ信頼性スコアとは
             </h3>
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              App authority score (アプリ信頼性スコア) とは、ストアからどれだけおすすめされたかを表す指標です。<br />
+              A2 Score - App authority score (アプリ信頼性スコア) とは、ストアからどれだけおすすめされたかを表す指標です。<br />
               アプリがおすすめする他のアプリの数は限られているので、webのバックリンクに似た仕組みでアプリの信頼性を計ることができます。<br />
               性質のよい空間で考えることになるので、データ数にたいしてロバスト、つまりあまり変化しないなど、指標として安定しているわけです。<br />
               0.0 から最大で 4.0 をとります。
