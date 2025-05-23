@@ -109,8 +109,7 @@ function Detail() {
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
               こちらのデータはユーザーの行動分析の可視化のなかでも、タッチポイント分析にあたります。<br />
-              関連するどのアプリからユーザーが流入しているかというタッチポイントが一覧できます。<br />
-              数値は 0.0 から最大で 4.0 をとり、毎日変動します。
+              関連するどのアプリからユーザーが流入しているかが一覧できます。
               
             </p>
             
