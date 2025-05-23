@@ -75,11 +75,13 @@ function App() {
               </a>
             </div>
 
+            <p className="mt-4 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
             <a 
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=5095&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fman%2Fkaitori%2Fkaitoritop.html" rel="nofollow">【駿河屋】最新作から昔懐かしのアイテムまでなんでも買い取ります！</a>
-
-            <div>
+            </p>
+            
+            <div className="mt-4 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
             <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=5095&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Ffeature%2Fsale2505-4%2Findex.html" rel="nofollow"><img src="/kumowaku2505_main2.jpg" width="800" height="350" alt="雨雲を吹きとばせ！駿河屋 わくわくセール" title="雨雲を吹きとばせ！駿河屋 わくわくセール" /></a>
             </div>
             <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
