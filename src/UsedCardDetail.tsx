@@ -42,6 +42,10 @@ function UsedCardDetail() {
   useEffect(() => {
     document.title = cardname + " カード買取中古価格推移分析ツール - Lapis AI"
 
+    if (cardname_2) {
+      document.title = cardname + "/" + cardname_2 + " カード買取中古価格推移分析ツール - Lapis AI"
+    }
+
     let url_used_price = ""
     if (cardname_2) {
       url_used_price = "https://query-backend-used.vercel.app/query-used-price-card-detail?cardname=" + cardname + "/" + cardname_2
