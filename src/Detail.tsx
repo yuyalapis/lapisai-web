@@ -30,7 +30,7 @@ function Detail() {
   })
 
   useEffect(() => {
-    document.title = appname+" 関連アプリと比較してスコア分析する - アプリ信頼性スコア分析ツール Query - Lapis AI"
+    document.title = appname+" 関連アプリと比較してスコア分析する - iPhoneアプリ競合分析・行動分析・信頼性スコア分析によるデータ分析ツール(無料) Query - Lapis AI"
     const url_app_detail = "https://query-backend-topaz.vercel.app/app_detail?appname="+appname
     
     fetch(url_app_detail).then(
