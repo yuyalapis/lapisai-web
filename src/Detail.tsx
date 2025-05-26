@@ -25,6 +25,7 @@ function Detail() {
     ],
     "searched":{
       "title":initial_h1,
+      "description": "loading...",
       "url":"https://apps.apple.com/jp/app/learn-italian-with-flashcards/id1513029876?l=en-US"
     }
   })
@@ -89,7 +90,12 @@ function Detail() {
               App authority score - アプリ信頼性スコア分析ツール<br />
               Query - developed by Lapis AI by 株式会社Rozen
             </h1>
-          
+
+            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+
+              {score_data["searched"]["description"]}
+              
+            </p>
 
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               App Authority Score - アプリ信頼性スコアによる関連アプリとの比較
