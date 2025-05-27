@@ -26,7 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/query" element={<Query />} />
           <Route path="/app/:appname" element={<Detail />} />
-          <Route path="/app/:query" element={<Search />} />
+          <Route path="/search/:query" element={<Search />} />
           <Route path="/query-used-price-card" element={<UsedCard />} />
           <Route path="/query-used-price-card-detail/:cardname" element={<UsedCardDetail />} />
           <Route path="/query-used-price-card-detail/:cardname/:cardname_2?" element={<UsedCardDetail />} />
