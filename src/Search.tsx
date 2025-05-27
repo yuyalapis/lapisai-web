@@ -84,12 +84,6 @@ function Search() {
               Query - developed by Lapis AI by 株式会社Rozen
             </h1>
 
-            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-
-              {searched_data["results"]["searched"]["description"]}
-              
-            </p>
-
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               App Authority Score - アプリ信頼性スコアによる関連アプリとの比較
             </h3>
