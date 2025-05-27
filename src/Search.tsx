@@ -123,7 +123,7 @@ function Search() {
                   {(item['title'].includes("ã") || item['title'].includes("â")) && decodeURIComponent(item['url'].split("/")[5])}
                   </a>
 
-                  <p className="mt-2 text-left text-pretty text-xs font-semibold text-gray-900 sm:text-xs">
+                  <p className="mt-2 text-left text-pretty text-xs font-semibold text-gray-900 sm:text-sm">
                     {item["description"]}
                   </p>
                 </p>
