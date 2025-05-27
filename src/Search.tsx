@@ -120,7 +120,7 @@ function Search() {
                   {" "}
                   <a target="_blank" href={item['url']} className="-m-1.5 p-1.5 text-cyan-800">
                   {!(item['title'].includes("ã") || item['title'].includes("â")) && item['title']}
-                  {(item['title'].includes("ã") || item['title'].includes("â")) && decodeURIComponent(item['url_from'].split("/")[5])}
+                  {(item['title'].includes("ã") || item['title'].includes("â")) && decodeURIComponent(item['url'].split("/")[5])}
                   </a>
 
                   <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
