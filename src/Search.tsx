@@ -86,7 +86,7 @@ function Search() {
 
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              {searched_data["result"]["searched"]["description"]}
+              {searched_data["results"]["searched"]["description"]}
               
             </p>
 
