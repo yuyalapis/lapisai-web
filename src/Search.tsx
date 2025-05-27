@@ -6,7 +6,7 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 import { useState, useEffect } from 'react'
 
-function Detail() {
+function Search() {
   const {query} = useParams()
   const [is_use_effect_called, set_called] = useState(0)
   const initial_h1 = query+" アプリ関連情報ロード中です"
@@ -165,4 +165,4 @@ function Detail() {
   );
 }
 
-export default Detail;
+export default Search;
