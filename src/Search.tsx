@@ -79,14 +79,14 @@ function Search() {
           
           <div className="text-center">
             <h1 className="text-balance text-xl pt-8 font-semibold tracking-tight text-gray-900 sm:text-xl">
-              {score_data["searched"]["title"]}の関連アプリと比較して分析する<br />
+              {query} の関連アプリ情報を分析する<br />
               App authority score - アプリ信頼性スコア分析ツール<br />
               Query - developed by Lapis AI by 株式会社Rozen
             </h1>
 
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              {score_data["searched"]["description"]}
+              {searched_data["result"]["searched"]["description"]}
               
             </p>
 
@@ -112,7 +112,7 @@ function Search() {
               
             </p>
             
-              {score_data?.results.searched.map(item => (
+              {searched_data?.results.searched.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   {item['app_authority_score'] >= 3.0　&&
                     <span className="px-3 py-1 bg-indigo-500 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1) }</span>
@@ -128,6 +128,10 @@ function Search() {
                   {!(item['title'].includes("ã") || item['title'].includes("â")) && item['title']}
                   {(item['title'].includes("ã") || item['title'].includes("â")) && decodeURIComponent(item['url_from'].split("/")[5])}
                   </a>
+
+                  <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+                    {item["description"]}
+                  </p>
                 </p>
               ))}
 
