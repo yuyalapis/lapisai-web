@@ -168,7 +168,7 @@ function Detail() {
         </div>
       
       </div>
-      <div className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 rounded-full bottom-4 left-1/2">
+      <div className="fixed z-50 w-full h-16 rounded-full bottom-4">
 
                 <form className="max-w-md mx-auto">   
                     <div className="absolute w-full">
