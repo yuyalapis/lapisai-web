@@ -169,23 +169,14 @@ function Detail() {
       
       </div>
       <div className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
-        <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
-            <div className="flex items-center justify-center">
-    
+
                 <form className="max-w-md mx-auto">   
-                    <div className="relative">
+                    <div className="absolute w-full">
                         <input type="search" id="default-search" value={search_term} onChange={(e) => {set_search_term(e.target.value)}} className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required />
                         <button type="submit" onClick={() => {window.location.href = "https://lapisai.com/search/" + search_term}} className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
                     </div>
                 </form>
     
-            </div>
-    
-            <div id="tooltip-new" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
-                アプリを検索またはキーワード検索
-                <div className="tooltip-arrow" data-popper-arrow></div>
-            </div>
-          </div>
       </div>
 
     </div>
