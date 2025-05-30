@@ -193,6 +193,16 @@ function App() {
               をつくっています。v1としてとりあえず動くレベルになっています。ランキング形式で一覧できるまでを作りました
               
             </p>
+
+            <div className="mt-4 flex items-center justify-center gap-x-6">
+              <a
+                href="https://github.com/yuyalapis/lapisai-web"
+                target="_blank"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                オープンソース
+              </a>
+            </div>
             
             <div className="text-left">
               <p className="mt-8 text-pretty text-base font-semibold text-gray-700 sm:text-lg/8">
