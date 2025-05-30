@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# We Open Sourced our Website with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project [Lapis AI](https://lapisai.com/), [Lapis AI query](https://lapisai.com/query) was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
