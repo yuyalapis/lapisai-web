@@ -17,6 +17,14 @@ import Siteref from "./Siteref"
 import SiterefUsedCard from "./SiterefUsedCard"
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
+
+const today = new Date()
+const year = today.getFullYear()
+const month = today.getMonth() + 1
+const date = today.getDate()
+
+const cached_fetch = cache(fetch)
+
 async function get_app_authority_score() {
   const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
   const res = await cached_fetch(url_app_authority_score)
