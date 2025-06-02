@@ -22,13 +22,6 @@ interface ScoreData {
   results: ScoreDataResult[];
 }
 
-async function get_app_authority_score() {
-  const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
-  const res = await cached_fetch(url_app_authority_score)
-  score_data = await res.json()
-  return {props: {score_data}}
-}
-
 function Query(score_data: any) {
   // const [is_use_effect_called, set_called] = useState(0)
   // let score_data = {
