@@ -9,20 +9,20 @@ import { useState, useEffect } from 'react'
 async function Query() {
   // const [is_use_effect_called, set_called] = useState(0)
   // const [score_data, set_score_data] = useState({
-    "results":[
-      {
-        "app_authority_score":4.0,
-        "score":15,
-        "title": "App authority score",
-        "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
-      },
-      {
-        "app_authority_score":4.0,
-        "score":15,"title":"アプリ信頼性スコア",
-        "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
-      }
-    ]
-  })
+  //   "results":[
+  //     {
+  //       "app_authority_score":4.0,
+  //       "score":15,
+  //       "title": "App authority score",
+  //       "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
+  //     },
+  //     {
+  //       "app_authority_score":4.0,
+  //       "score":15,"title":"アプリ信頼性スコア",
+  //       "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
+  //     }
+  //   ]
+  // })
 
   document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
   
