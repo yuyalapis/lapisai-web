@@ -24,6 +24,7 @@ interface ScoreData {
 
 function Query(props: any) {
   const { score_data } = props
+  console.log(score_data)
   // const [is_use_effect_called, set_called] = useState(0)
   // let score_data = {
   //   "results":[
