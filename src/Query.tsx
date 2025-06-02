@@ -55,8 +55,6 @@ function Query(score_data) {
 
   document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
 
-  score_data = await get_app_authority_score()
-
   // useEffect(() => {
   //   cached_fetch(url_app_authority_score).then(
   //     (response) => {
