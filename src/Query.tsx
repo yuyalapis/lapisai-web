@@ -18,10 +18,8 @@ interface ScoreDataResult {
       "title": string;
       "url_to": string;
     }
-interface ScoreDataResults extends Array<ScoreDataResult>{}
-
 interface ScoreData {
-  "results": ScoreDataResults;
+  "results": ScoreDataResult[];
 }
 
 async function get_app_authority_score() {
