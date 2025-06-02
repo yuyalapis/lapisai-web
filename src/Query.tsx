@@ -12,16 +12,16 @@ const date = today.getDate()
 
 const cached_fetch = cache(fetch)
 
-interface ScoreDataResult = {
-      "app_authority_score": number,
-      "score": number,
-      "title": string,
-      "url_to": string
+interface ScoreDataResult {
+      "app_authority_score": number;
+      "score": number;
+      "title": string;
+      "url_to": string;
     }
 interface ScoreDataResults extends Array<ScoreDataResult>{}
 
-interface ScoreData = {
-  "results": ScoreDataResults
+interface ScoreData {
+  "results": ScoreDataResults;
 }
 
 async function get_app_authority_score() {
