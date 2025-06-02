@@ -13,13 +13,13 @@ const date = today.getDate()
 const cached_fetch = cache(fetch)
 
 interface ScoreDataResult {
-      "app_authority_score": number;
-      "score": number;
-      "title": string;
-      "url_to": string;
+      app_authority_score: number;
+      score: number;
+      title: string;
+      url_to: string;
     }
 interface ScoreData {
-  "results": ScoreDataResult[];
+  results: ScoreDataResult[];
 }
 
 async function get_app_authority_score() {
