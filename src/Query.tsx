@@ -1,4 +1,5 @@
 import React from 'react';
+import {cache} from 'react'
 import './App.css';
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
@@ -25,8 +26,16 @@ function Query() {
 
   useEffect(() => {
     document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
-    const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score"
-    fetch(url_app_authority_score).then(
+    
+    const today = new Date()
+    const year = today.getFullYear()
+    const month = today.getMonth() + 1
+    const date = today.getDate()
+    const cached_fetch = cache(fetch)
+
+    const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
+    
+    cached_fetch(url_app_authority_score).then(
       (response) => {
         console.log(response)
         return response.json()
