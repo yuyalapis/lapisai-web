@@ -22,7 +22,7 @@ interface ScoreData {
   results: ScoreDataResult[];
 }
 
-function Query(score_data: ScoreData) {
+function Query(score_data: any) {
   // const [is_use_effect_called, set_called] = useState(0)
   // let score_data = {
   //   "results":[
