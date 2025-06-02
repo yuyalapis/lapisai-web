@@ -6,9 +6,9 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 import { useState, useEffect } from 'react'
 
 
-function Query() {
-  const [is_use_effect_called, set_called] = useState(0)
-  const [score_data, set_score_data] = useState({
+async function Query() {
+  // const [is_use_effect_called, set_called] = useState(0)
+  // const [score_data, set_score_data] = useState({
     "results":[
       {
         "app_authority_score":4.0,
@@ -24,29 +24,37 @@ function Query() {
     ]
   })
 
-  useEffect(() => {
-    document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
-    
-    const today = new Date()
-    const year = today.getFullYear()
-    const month = today.getMonth() + 1
-    const date = today.getDate()
-    const cached_fetch = cache(fetch)
+  document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
+  
+  const today = new Date()
+  const year = today.getFullYear()
+  const month = today.getMonth() + 1
+  const date = today.getDate()
+  
+  const cached_fetch = cache(fetch)
 
-    const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
-    
-    cached_fetch(url_app_authority_score).then(
-      (response) => {
-        console.log(response)
-        return response.json()
-      }
-    ).then(
-      (json_response) => {
-        console.log(json_response)
-        set_score_data(json_response)
-      }
-    )
-  }, [])
+  const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
+
+  async function get_app_authority_score() {
+    const res = await cached_fetch(url_app_authority_score);
+    return res.json();
+  }
+
+  const score_data = await get_app_authority_score()
+
+  // useEffect(() => {
+  //   cached_fetch(url_app_authority_score).then(
+  //     (response) => {
+  //       console.log(response)
+  //       return response.json()
+  //     }
+  //   ).then(
+  //     (json_response) => {
+  //       console.log(json_response)
+  //       set_score_data(json_response)
+  //     }
+  //   )
+  // }, [])
 
   return (
     <div className="bg-white">
