@@ -13,13 +13,6 @@ const date = today.getDate()
 const cached_fetch = cache(fetch)
 
 async function get_app_authority_score() {
-  const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
-  const res = await cached_fetch(url_app_authority_score);
-  return res.json();
-}
-
-async function Query() {
-  // const [is_use_effect_called, set_called] = useState(0)
   let score_data = {
     "results":[
       {
@@ -35,6 +28,30 @@ async function Query() {
       }
     ]
   }
+  
+  const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
+  const res = await cached_fetch(url_app_authority_score)
+  score_data = await res.json()
+  return {props: {score_data}}
+}
+
+function Query(score_data) {
+  // const [is_use_effect_called, set_called] = useState(0)
+  // let score_data = {
+  //   "results":[
+  //     {
+  //       "app_authority_score":4.0,
+  //       "score":15,
+  //       "title": "App authority score",
+  //       "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
+  //     },
+  //     {
+  //       "app_authority_score":4.0,
+  //       "score":15,"title":"アプリ信頼性スコア",
+  //       "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
+  //     }
+  //   ]
+  // }
 
   document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
 
