@@ -1,5 +1,6 @@
 import React from 'react';
 import {cache} from 'react'
+import { use } from "react";
 import './App.css';
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
@@ -23,7 +24,8 @@ interface ScoreData {
 }
 
 function Query(props: any) {
-  const { score_data } = props
+  let { score_data } = props
+  score_data = use(score_data)
   console.log(score_data)
   // const [is_use_effect_called, set_called] = useState(0)
   // let score_data = {
