@@ -115,7 +115,7 @@ function Query(score_data: ScoreData) {
             <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
               App Authority Score Realtime Ranking <br /> アプリオーソリティースコア リアルタイムランキング
             </h3>
-              {score_data?.results.map(item:any => (
+              {score_data?.results.map(item => (
                 <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
                   {item['app_authority_score'] >= 3.0　&&
                     <span className="px-3 py-1 bg-indigo-500 text-white rounded-full text-xs" >{item['app_authority_score'].toFixed(1) }</span>
