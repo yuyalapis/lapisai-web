@@ -12,6 +12,7 @@ const month = today.getMonth() + 1
 const date = today.getDate()
 
 const cached_fetch = cache(fetch)
+const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
 
 interface ScoreDataResult {
       app_authority_score: number;
@@ -23,42 +24,39 @@ interface ScoreData {
   results: ScoreDataResult[];
 }
 
-function Query(props: any) {
-  let { score_data_promise } = props
-  const score_data: any = score_data_promise
-  console.log(score_data)
-  // const [is_use_effect_called, set_called] = useState(0)
-  // let score_data = {
-  //   "results":[
-  //     {
-  //       "app_authority_score":4.0,
-  //       "score":15,
-  //       "title": "App authority score",
-  //       "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
-  //     },
-  //     {
-  //       "app_authority_score":4.0,
-  //       "score":15,"title":"アプリ信頼性スコア",
-  //       "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
-  //     }
-  //   ]
-  // }
+function Query() {
+  const [is_use_effect_called, set_called] = useState(0)
+  const [score_data, set_score_data] = useState({
+    "results":[
+      {
+        "app_authority_score":4.0,
+        "score":15,
+        "title": "App authority score",
+        "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
+      },
+      {
+        "app_authority_score":4.0,
+        "score":15,"title":"アプリ信頼性スコア",
+        "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
+      }
+    ]
+  })
 
   document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
 
-  // useEffect(() => {
-  //   cached_fetch(url_app_authority_score).then(
-  //     (response) => {
-  //       console.log(response)
-  //       return response.json()
-  //     }
-  //   ).then(
-  //     (json_response) => {
-  //       console.log(json_response)
-  //       set_score_data(json_response)
-  //     }
-  //   )
-  // }, [])
+  useEffect(() => {
+    cached_fetch(url_app_authority_score).then(
+      (response) => {
+        console.log(response)
+        return response.json()
+      }
+    ).then(
+      (json_response) => {
+        console.log(json_response)
+        set_score_data(json_response)
+      }
+    )
+  }, [])
 
   return (
     <div className="bg-white">
