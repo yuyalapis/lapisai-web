@@ -12,30 +12,26 @@ const date = today.getDate()
 
 const cached_fetch = cache(fetch)
 
+interface ScoreDataResult = {
+      "app_authority_score": number,
+      "score": number,
+      "title": string,
+      "url_to": string
+    }
+interface ScoreDataResults extends Array<ScoreDataResult>{}
+
+interface ScoreData = {
+  "results": ScoreDataResults
+}
+
 async function get_app_authority_score() {
-  let score_data = {
-    "results":[
-      {
-        "app_authority_score":4.0,
-        "score":15,
-        "title": "App authority score",
-        "url_to":"https://apps.apple.com/jp/app/loading.../id1664391616US"
-      },
-      {
-        "app_authority_score":4.0,
-        "score":15,"title":"アプリ信頼性スコア",
-        "url_to":"https://apps.apple.com/jp/app/ロード中です/id1244142051?l=en-US"
-      }
-    ]
-  }
-  
   const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
   const res = await cached_fetch(url_app_authority_score)
   score_data = await res.json()
   return {props: {score_data}}
 }
 
-function Query(score_data) {
+function Query(score_data: ScoreData) {
   // const [is_use_effect_called, set_called] = useState(0)
   // let score_data = {
   //   "results":[
