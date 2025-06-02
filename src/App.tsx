@@ -17,6 +17,13 @@ import Siteref from "./Siteref"
 import SiterefUsedCard from "./SiterefUsedCard"
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
+async function get_app_authority_score() {
+  const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
+  const res = await cached_fetch(url_app_authority_score)
+  score_data = await res.json()
+  return {props: {score_data}}
+}
+
 function App() {
 
   return (
@@ -24,7 +31,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/query" element={<Query score_data={score_data} />} />
+          <Route path="/query" element={<Query score_data={get_app_authority_score()} />} />
           <Route path="/app/:appname" element={<Detail />} />
           <Route path="/search/:query" element={<Search />} />
           <Route path="/query-used-price-card" element={<UsedCard />} />
