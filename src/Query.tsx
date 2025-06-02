@@ -13,6 +13,7 @@ const date = today.getDate()
 const cached_fetch = cache(fetch)
 
 async function get_app_authority_score() {
+  const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
   const res = await cached_fetch(url_app_authority_score);
   return res.json();
 }
@@ -37,7 +38,6 @@ async function Query() {
 
   document.title = "Query - アプリ信頼性スコア分析ツール developed by Lapis AI by 株式会社Rozen"
 
-  const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
   score_data = await get_app_authority_score()
 
   // useEffect(() => {
