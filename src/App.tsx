@@ -29,8 +29,8 @@ const cached_fetch = cache(fetch)
 async function get_app_authority_score() {
   const url_app_authority_score = "https://query-backend-topaz.vercel.app/app_authority_score?date=" + year + "-" + month + "-" + date 
   const res = await cached_fetch(url_app_authority_score)
-  score_data = await res.json()
-  return {props: {score_data}}
+  const score_data = await res.json()
+  return score_data
 }
 
 function App() {
