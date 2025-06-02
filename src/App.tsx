@@ -1,5 +1,6 @@
 import React from 'react';
 import {cache} from 'react'
+import {use} from 'react'
 import logo from './logo.svg';
 import './App.css';
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
@@ -40,7 +41,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/query" element={<Query score_data_promise={get_app_authority_score()} />} />
+          <Route path="/query" element={<Query score_data_promise={use(get_app_authority_score())} />} />
           <Route path="/app/:appname" element={<Detail />} />
           <Route path="/search/:query" element={<Search />} />
           <Route path="/query-used-price-card" element={<UsedCard />} />
