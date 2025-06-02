@@ -102,7 +102,7 @@ function Detail() {
 
             <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
 
-              {score_data["searched"]["description"]}
+              {decodeURIComponent(score_data["searched"]["description"])}
               
             </p>
 
