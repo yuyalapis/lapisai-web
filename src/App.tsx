@@ -24,7 +24,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/query" element={<Query score_data:ScoreData={score_data} />} />
+          <Route path="/query" element={<Query score_data:any={score_data} />} />
           <Route path="/app/:appname" element={<Detail />} />
           <Route path="/search/:query" element={<Search />} />
           <Route path="/query-used-price-card" element={<UsedCard />} />
