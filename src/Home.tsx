@@ -61,17 +61,17 @@ function App() {
             </h1>
 
             <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              中古価格分析ツールつくっています<br />
-              価格の推移を分析できます<br />
+              pythonのE2Eテストフレームワークつくりました<br />
+              javascriptありでテストできます<br />
 
             </p>
             <div className="mt-4 flex items-center justify-center gap-x-6">
               <a
-                href="https://lapisai.com/query-used-price-card"
+                href="https://github.com/yuyalapis/e2etest"
                 target="_blank"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Query - 中古価格推移分析ツール
+                pip install e2etest
               </a>
             </div>
 
@@ -88,6 +88,22 @@ function App() {
                 Query - アプリ信頼性スコア分析ツール
               </a>
             </div>
+
+            <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
+              中古価格分析ツールつくっています<br />
+              価格の推移を分析できます<br />
+
+            </p>
+            <div className="mt-4 flex items-center justify-center gap-x-6">
+              <a
+                href="https://lapisai.com/query-used-price-card"
+                target="_blank"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Query - 中古価格推移分析ツール
+              </a>
+            </div>
+            
             <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
               いい栞が、ない<br />
               本当にない<br />
