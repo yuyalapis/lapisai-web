@@ -5,7 +5,7 @@ type Message = {
   text: string;
 };
 
-export default function RoomRoot() {
+function RoomRoot() {
   const [messages, setMessages] = useState<Message[]>([
     { from: "other", text: "こんにちは！ご質問はありますか？" },
     { from: "me", text: "はい、お願いします。" },
