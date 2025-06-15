@@ -5,7 +5,7 @@ type Message = {
   text: string;
 };
 
-function RoomRoot() {
+export default function RoomRoot() {
   const [messages, setMessages] = useState<Message[]>([
     { from: "other", text: "こんにちは！ご質問はありますか？" },
     { from: "me", text: "はい、お願いします。" },
@@ -57,9 +57,9 @@ function RoomRoot() {
           rows={1}
           placeholder="Type your message..."
           onKeyDown={e => {
-            if (e.key === "Enter" && !e.shiftKey) {
-              e.preventDefault();
-              handleSend();
+            // Prevent default Enter key action from submitting a form (if inside a form)
+            if (e.key === "Enter") {
+              // Do nothing special; allow newline
             }
           }}
         />
@@ -73,5 +73,3 @@ function RoomRoot() {
     </div>
   );
 }
-
-export default RoomRoot;
