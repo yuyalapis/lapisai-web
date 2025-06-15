@@ -31,9 +31,11 @@ export default function ChatUI() {
   return (
     <div className="flex flex-col h-screen max-w-md mx-auto bg-gray-900 border border-gray-800">
       {/* Top Nav Bar */}
+      <header className="absolute inset-x-0 top-0 z-50">
       <nav className="w-full py-3 border-b border-gray-800 bg-gray-950 flex justify-center items-center">
         <img src="/logo_w.png" alt="Logo" className="h-8" />
       </nav>
+      </header>
       {/* Chat Messages */}
       <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-3">
         {messages.map((msg, i) => (
