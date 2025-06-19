@@ -17,6 +17,7 @@ const navigation = [
 
 function App() {
   const [cat_state, set_cat_state] = useState(cat_0)
+  const url_cat_clicked = "https://query-backend-used.vercel.app/stats/cat?region=card"
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
