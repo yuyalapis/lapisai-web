@@ -9,7 +9,6 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-import RoomRoot from "./RoomRoot"
 import Home from "./Home"
 import Query from "./Query"
 import Detail from "./Detail"
@@ -27,8 +26,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<RoomRoot />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/query" element={<Query />} />
           <Route path="/app/:appname" element={<Detail />} />
           <Route path="/search/:query" element={<Search />} />
