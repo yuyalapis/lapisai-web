@@ -7,12 +7,16 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+import cat_0 from "./images/cat_0.png"
+import cat_7_flash from "./images/cat_7_flash.png"
+
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Company', href: '#' },
 ]
 
 function App() {
+  const [cat_state, set_cat_state] = useState(cat_0)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -35,13 +39,7 @@ function App() {
           </div>
 
           <div className="flex flex-1 justify-center ml-auto">
-            <a
-                href="https://lapisai.com/query-used-price-card"
-                target="_blank"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                中古価格分析
-              </a>
+            <img src={cat_state} className="w-20 h-20" id="cat" onClick={() => {set_cat_state(cat_7_flash); fetch(url_cat_clicked).then((response) => {console.log(response)}); setTimeout(() => {set_cat_state(cat_0)}, 1500)}} />
           </div>
         </nav>
         
@@ -59,50 +57,6 @@ function App() {
               Produced by Lapis AI<br />
               By 株式会社Rozen
             </h1>
-
-            <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              pythonのE2Eテストフレームワークつくりました<br />
-              javascriptありでテストできます<br />
-
-            </p>
-            <div className="mt-4 flex items-center justify-center gap-x-6">
-              <a
-                href="https://github.com/yuyalapis/e2etest"
-                target="_blank"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                pip install e2etest
-              </a>
-            </div>
-
-            <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              アプリ分析ツールでは、アップストアからアプリがどれくらいおすすめされているかを分析できます<br />
-
-            </p>
-            <div className="mt-4 flex items-center justify-center gap-x-6">
-              <a
-                href="https://lapisai.com/query"
-                target="_blank"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Query - アプリ信頼性スコア分析ツール
-              </a>
-            </div>
-
-            <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              中古価格分析ツールつくっています<br />
-              価格の推移を分析できます<br />
-
-            </p>
-            <div className="mt-4 flex items-center justify-center gap-x-6">
-              <a
-                href="https://lapisai.com/query-used-price-card"
-                target="_blank"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Query - 中古価格推移分析ツール
-              </a>
-            </div>
             
             <p className="mt-8 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
               いい栞が、ない<br />
@@ -125,6 +79,7 @@ function App() {
               無線通信の技術を回路設計・コンデンサー選びから行い<br />
               プロトタイプ Lapis I が完成しました
             </p>
+
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
@@ -196,29 +151,6 @@ function App() {
               <br />
               
             </p>
-
-            <h3 className="mt-8 text-left text-pretty text-xl font-semibold text-gray-900 sm:text-lg">
-              アプリがストアからどれだけおすすめされたかを示す App authority score - アプリ信頼性スコア
-            </h3>
-            <p className="mt-2 text-left text-pretty text-base font-semibold text-gray-700 sm:text-lg">
-              アプリがストアからどれだけおすすめされたかをバックリンクのような手法で集計し可視化したのがアプリオーソリティースコアになります<br />
-              最大で4.0をとるこの指標を用いてアプリ分析ツール <br />
-              <a href="https://lapisai.com/query" className="text-sm font-semibold leading-6 text-indigo-600">
-                Query
-              </a>
-              をつくっています。v1としてとりあえず動くレベルになっています。ランキング形式で一覧できるまでを作りました
-              
-            </p>
-
-            <div className="mt-4 flex items-center justify-center gap-x-6">
-              <a
-                href="https://github.com/yuyalapis/lapisai-web"
-                target="_blank"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                オープンソース
-              </a>
-            </div>
             
             <div className="text-left">
               <p className="mt-8 text-pretty text-base font-semibold text-gray-700 sm:text-lg/8">
@@ -235,6 +167,7 @@ function App() {
                 <br /><br />2025-04-16: 情報の世界で基本となる1と0の世界について、白と黒のフィールドというコラムを追記しました
                 <br /><br />2025-04-17: Intelligentia Exceptio, Symbol: GNDed というコラムを追記しました
                 <br /><br />2025-04-17: lapisai.com/query をとりあえず動くレベルで作りました。ランキング形式でストアからどれだけおすすめされているかわかります
+                <br /><br />2025-06-15: OS作成中です
               </p>
             </div>
             
